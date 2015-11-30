@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20151113 13:34:40.810" generator="Robot 2.9b2 (Python 2.7 on win32)">
-<suite source="D:\OMCTest" id="s1" name="OMCTest">
-<suite source="D:\OMCTest\DefaultConfiguration.txt" id="s1-s1" name="DefaultConfiguration">
+<robot generated="20151130 13:29:57.317" generator="Robot 2.9.2 (Python 2.7.6 on linux2)">
+<suite source="/home/omcadmin/autoOMC/OMCTest" id="s1" name="OMCTest">
+<suite source="/home/omcadmin/autoOMC/OMCTest/DefaultConfiguration.txt" id="s1-s1" name="DefaultConfiguration">
 <test id="s1-s1-t1" name="Default_001">
 <kw name="登录web页面" library="MyFlow">
 <arguments>
@@ -16,12 +16,12 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20151113 13:34:43.572" level="INFO">Opening browser 'chrome' to base url 'http://172.30.10.130'</msg>
-<status status="PASS" endtime="20151113 13:35:10.799" starttime="20151113 13:34:43.572"></status>
+<msg timestamp="20151130 13:29:58.165" level="INFO">Opening browser 'firefox' to base url 'http://172.30.10.130'</msg>
+<status status="PASS" endtime="20151130 13:30:04.238" starttime="20151130 13:29:58.164"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20151113 13:35:11.126" starttime="20151113 13:35:10.814"></status>
+<status status="PASS" endtime="20151130 13:30:04.249" starttime="20151130 13:30:04.239"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -29,8 +29,8 @@
 <arg>id=id_username</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20151113 13:35:11.127" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
-<status status="PASS" endtime="20151113 13:35:11.356" starttime="20151113 13:35:11.127"></status>
+<msg timestamp="20151130 13:30:04.250" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
+<status status="PASS" endtime="20151130 13:30:04.351" starttime="20151130 13:30:04.249"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into text field identified by `locator`.</doc>
@@ -38,25 +38,25 @@
 <arg>id=id_password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20151113 13:35:11.357" level="INFO">Typing password into text field 'id=id_password'</msg>
-<status status="PASS" endtime="20151113 13:35:11.459" starttime="20151113 13:35:11.356"></status>
+<msg timestamp="20151130 13:30:04.352" level="INFO">Typing password into text field 'id=id_password'</msg>
+<status status="PASS" endtime="20151130 13:30:04.468" starttime="20151130 13:30:04.352"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>css=[type=submit]</arg>
 </arguments>
-<msg timestamp="20151113 13:35:11.461" level="INFO">Clicking button 'css=[type=submit]'.</msg>
-<status status="PASS" endtime="20151113 13:35:11.559" starttime="20151113 13:35:11.460"></status>
+<msg timestamp="20151130 13:30:04.469" level="INFO">Clicking button 'css=[type=submit]'.</msg>
+<status status="PASS" endtime="20151130 13:30:05.613" starttime="20151130 13:30:04.468"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>id=user_info</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:35:15.731" starttime="20151113 13:35:11.560"></status>
+<status status="PASS" endtime="20151130 13:30:05.626" starttime="20151130 13:30:05.614"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:35:15.731" starttime="20151113 13:34:43.570"></status>
+<status status="PASS" endtime="20151130 13:30:05.627" starttime="20151130 13:29:58.163"></status>
 </kw>
 <kw name="点击默认设置" library="MyFlow">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
@@ -64,45 +64,116 @@
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:35:15.862" starttime="20151113 13:35:15.735"></status>
+<status status="PASS" endtime="20151130 13:30:05.657" starttime="20151130 13:30:05.628"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<msg timestamp="20151113 13:35:15.863" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
-<status status="PASS" endtime="20151113 13:35:15.912" starttime="20151113 13:35:15.862"></status>
+<msg timestamp="20151130 13:30:05.658" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:05.730" starttime="20151130 13:30:05.658"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:35:16.189" starttime="20151113 13:35:15.913"></status>
+<status status="PASS" endtime="20151130 13:30:05.973" starttime="20151130 13:30:05.730"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<msg timestamp="20151113 13:35:16.191" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
-<status status="PASS" endtime="20151113 13:35:16.256" starttime="20151113 13:35:16.190"></status>
+<msg timestamp="20151130 13:30:05.974" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:06.573" starttime="20151130 13:30:05.974"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20151113 13:35:32.498" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20151113 13:35:32.499" starttime="20151113 13:35:32.215"></status>
+<status status="PASS" endtime="20151130 13:30:06.586" starttime="20151130 13:30:06.574"></status>
 </kw>
-<msg timestamp="20151113 13:35:32.516" level="FAIL">Element 'Xpath=//input[@id="id_default_username"]' did not appear in 5 seconds</msg>
-<status status="FAIL" endtime="20151113 13:35:32.516" starttime="20151113 13:35:16.257"></status>
+<status status="PASS" endtime="20151130 13:30:06.587" starttime="20151130 13:30:05.627"></status>
 </kw>
-<status status="FAIL" endtime="20151113 13:35:32.517" starttime="20151113 13:35:15.734"></status>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>4~7行检查页面元素</arg>
+</arguments>
+<status status="PASS" endtime="20151130 13:30:06.588" starttime="20151130 13:30:06.588"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>Xpath=//input[@id="id_default_username"]</arg>
+</arguments>
+<msg timestamp="20151130 13:30:06.597" level="INFO">Current page contains element 'Xpath=//input[@id="id_default_username"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:06.598" starttime="20151130 13:30:06.589"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>Xpath=//input[@id="id_default_pwd"]</arg>
+</arguments>
+<msg timestamp="20151130 13:30:06.606" level="INFO">Current page contains element 'Xpath=//input[@id="id_default_pwd"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:06.607" starttime="20151130 13:30:06.598"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>Xpath=//input[@id="id_confirm_pwd"]</arg>
+</arguments>
+<msg timestamp="20151130 13:30:06.616" level="INFO">Current page contains element 'Xpath=//input[@id="id_confirm_pwd"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:06.616" starttime="20151130 13:30:06.607"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>Xpath=//button[@type="submit"]</arg>
+</arguments>
+<msg timestamp="20151130 13:30:06.624" level="INFO">Current page contains element 'Xpath=//button[@type="submit"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:06.625" starttime="20151130 13:30:06.617"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//button[@type="submit"]</arg>
+</arguments>
+<msg timestamp="20151130 13:30:06.627" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:07.231" starttime="20151130 13:30:06.626"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>Xpath=//label[@for="id_default_pwd"]/following-sibling::span[@class="help-inline"]</arg>
+</arguments>
+<status status="PASS" endtime="20151130 13:30:07.258" starttime="20151130 13:30:07.232"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>Xpath=//label[@for="id_default_pwd"]/following-sibling::span[@class="help-inline"]</arg>
+</arguments>
+<msg timestamp="20151130 13:30:07.265" level="INFO">Current page contains element 'Xpath=//label[@for="id_default_pwd"]/following-sibling::span[@class="help-inline"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:07.265" starttime="20151130 13:30:07.259"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>Xpath=//label[@for="id_confirm_pwd"]/following-sibling::span[@class="help-inline"]</arg>
+</arguments>
+<msg timestamp="20151130 13:30:07.279" level="INFO">Current page contains element 'Xpath=//label[@for="id_confirm_pwd"]/following-sibling::span[@class="help-inline"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:07.279" starttime="20151130 13:30:07.266"></status>
+</kw>
+<kw name="关闭浏览器" library="MyKeyword">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20151130 13:30:07.322" starttime="20151130 13:30:07.281"></status>
+</kw>
+<status status="PASS" endtime="20151130 13:30:07.323" starttime="20151130 13:30:07.280"></status>
 </kw>
 <doc>1、检查默认配置页面元素，应该含有“用户名”、“密码”、确认密码三个输入框和一个名称为“保存”的按钮；
 2、Default Configuration页面，不输入信息，点击“保存”按钮；</doc>
@@ -110,7 +181,7 @@
 <tag>DefaultConfiguration</tag>
 <tag>done</tag>
 </tags>
-<status status="FAIL" endtime="20151113 13:35:32.517" critical="yes" starttime="20151113 13:34:43.531">Element 'Xpath=//input[@id="id_default_username"]' did not appear in 5 seconds</status>
+<status status="PASS" endtime="20151130 13:30:07.323" critical="yes" starttime="20151130 13:29:58.160"></status>
 </test>
 <test id="s1-s1-t2" name="Default_002">
 <kw name="登录web页面" library="MyFlow">
@@ -126,12 +197,12 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20151113 13:35:32.522" level="INFO">Opening browser 'chrome' to base url 'http://172.30.10.130'</msg>
-<status status="PASS" endtime="20151113 13:35:42.256" starttime="20151113 13:35:32.521"></status>
+<msg timestamp="20151130 13:30:07.335" level="INFO">Opening browser 'firefox' to base url 'http://172.30.10.130'</msg>
+<status status="PASS" endtime="20151130 13:30:10.683" starttime="20151130 13:30:07.334"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20151113 13:35:42.485" starttime="20151113 13:35:42.257"></status>
+<status status="PASS" endtime="20151130 13:30:10.700" starttime="20151130 13:30:10.683"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -139,8 +210,8 @@
 <arg>id=id_username</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20151113 13:35:42.487" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
-<status status="PASS" endtime="20151113 13:35:42.677" starttime="20151113 13:35:42.486"></status>
+<msg timestamp="20151130 13:30:10.702" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
+<status status="PASS" endtime="20151130 13:30:10.842" starttime="20151130 13:30:10.700"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into text field identified by `locator`.</doc>
@@ -148,25 +219,25 @@
 <arg>id=id_password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20151113 13:35:42.680" level="INFO">Typing password into text field 'id=id_password'</msg>
-<status status="PASS" endtime="20151113 13:35:42.813" starttime="20151113 13:35:42.678"></status>
+<msg timestamp="20151130 13:30:10.843" level="INFO">Typing password into text field 'id=id_password'</msg>
+<status status="PASS" endtime="20151130 13:30:10.925" starttime="20151130 13:30:10.843"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>css=[type=submit]</arg>
 </arguments>
-<msg timestamp="20151113 13:35:42.815" level="INFO">Clicking button 'css=[type=submit]'.</msg>
-<status status="PASS" endtime="20151113 13:35:42.925" starttime="20151113 13:35:42.814"></status>
+<msg timestamp="20151130 13:30:10.926" level="INFO">Clicking button 'css=[type=submit]'.</msg>
+<status status="PASS" endtime="20151130 13:30:12.595" starttime="20151130 13:30:10.925"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>id=user_info</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:35:44.397" starttime="20151113 13:35:42.926"></status>
+<status status="PASS" endtime="20151130 13:30:12.607" starttime="20151130 13:30:12.595"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:35:44.398" starttime="20151113 13:35:32.520"></status>
+<status status="PASS" endtime="20151130 13:30:12.608" starttime="20151130 13:30:07.333"></status>
 </kw>
 <kw name="点击默认设置" library="MyFlow">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
@@ -174,39 +245,39 @@
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:35:44.428" starttime="20151113 13:35:44.399"></status>
+<status status="PASS" endtime="20151130 13:30:12.629" starttime="20151130 13:30:12.609"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<msg timestamp="20151113 13:35:44.429" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
-<status status="PASS" endtime="20151113 13:35:44.474" starttime="20151113 13:35:44.428"></status>
+<msg timestamp="20151130 13:30:12.630" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:12.698" starttime="20151130 13:30:12.629"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:35:44.771" starttime="20151113 13:35:44.475"></status>
+<status status="PASS" endtime="20151130 13:30:12.950" starttime="20151130 13:30:12.699"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<msg timestamp="20151113 13:35:44.773" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
-<status status="PASS" endtime="20151113 13:35:44.859" starttime="20151113 13:35:44.772"></status>
+<msg timestamp="20151130 13:30:12.951" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:13.578" starttime="20151130 13:30:12.950"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:35:45.507" starttime="20151113 13:35:44.861"></status>
+<status status="PASS" endtime="20151130 13:30:13.592" starttime="20151130 13:30:13.579"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:35:45.507" starttime="20151113 13:35:44.398"></status>
+<status status="PASS" endtime="20151130 13:30:13.592" starttime="20151130 13:30:12.609"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -214,8 +285,8 @@
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 <arg>${EMPTY}</arg>
 </arguments>
-<msg timestamp="20151113 13:35:45.515" level="INFO">Typing text '' into text field 'Xpath=//input[@id="id_default_username"]'</msg>
-<status status="PASS" endtime="20151113 13:35:45.609" starttime="20151113 13:35:45.514"></status>
+<msg timestamp="20151130 13:30:13.594" level="INFO">Typing text '' into text field 'Xpath=//input[@id="id_default_username"]'</msg>
+<status status="PASS" endtime="20151130 13:30:13.661" starttime="20151130 13:30:13.593"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -223,8 +294,8 @@
 <arg>Xpath=//input[@id="id_default_pwd"]</arg>
 <arg>${password-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:35:45.611" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_pwd"]'</msg>
-<status status="PASS" endtime="20151113 13:35:45.973" starttime="20151113 13:35:45.610"></status>
+<msg timestamp="20151130 13:30:13.663" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_pwd"]'</msg>
+<status status="PASS" endtime="20151130 13:30:13.771" starttime="20151130 13:30:13.662"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -232,16 +303,16 @@
 <arg>Xpath=//input[@id="id_confirm_pwd"]</arg>
 <arg>${password-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:35:45.975" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_confirm_pwd"]'</msg>
-<status status="PASS" endtime="20151113 13:35:46.108" starttime="20151113 13:35:45.974"></status>
+<msg timestamp="20151130 13:30:13.772" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_confirm_pwd"]'</msg>
+<status status="PASS" endtime="20151130 13:30:13.883" starttime="20151130 13:30:13.772"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//button[@type="submit"]</arg>
 </arguments>
-<msg timestamp="20151113 13:35:46.110" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
-<status status="PASS" endtime="20151113 13:35:46.190" starttime="20151113 13:35:46.109"></status>
+<msg timestamp="20151130 13:30:13.885" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:15.382" starttime="20151130 13:30:13.884"></status>
 </kw>
 <kw name="提示成功" library="MyKeyword">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -250,22 +321,23 @@
 <arg>xPath=/html/body/div[1]/div[2]/div[1]/div[@class='alert alert-block alert-success fade in']</arg>
 <arg>10</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20151113 13:36:03.482" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20151113 13:36:03.483" starttime="20151113 13:36:03.280"></status>
+<status status="PASS" endtime="20151130 13:30:15.396" starttime="20151130 13:30:15.383"></status>
 </kw>
-<msg timestamp="20151113 13:36:03.483" level="FAIL">Element 'xPath=/html/body/div[1]/div[2]/div[1]/div[@class='alert alert-block alert-success fade in']' did not appear in 10 seconds</msg>
-<status status="FAIL" endtime="20151113 13:36:03.483" starttime="20151113 13:35:46.192"></status>
+<status status="PASS" endtime="20151130 13:30:15.396" starttime="20151130 13:30:15.382"></status>
 </kw>
-<status status="FAIL" endtime="20151113 13:36:03.484" starttime="20151113 13:35:46.191"></status>
+<kw name="关闭浏览器" library="MyKeyword">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20151130 13:30:15.429" starttime="20151130 13:30:15.397"></status>
+</kw>
+<status status="PASS" endtime="20151130 13:30:15.429" starttime="20151130 13:30:15.397"></status>
 </kw>
 <doc>Default Configuration页面，不输入username</doc>
 <tags>
 <tag>DefaultConfiguration</tag>
 <tag>done</tag>
 </tags>
-<status status="FAIL" endtime="20151113 13:36:03.484" critical="yes" starttime="20151113 13:35:32.519">Element 'xPath=/html/body/div[1]/div[2]/div[1]/div[@class='alert alert-block alert-success fade in']' did not appear in 10 seconds</status>
+<status status="PASS" endtime="20151130 13:30:15.430" critical="yes" starttime="20151130 13:30:07.328"></status>
 </test>
 <test id="s1-s1-t3" name="Default_003">
 <kw name="登录web页面" library="MyFlow">
@@ -281,12 +353,12 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:03.488" level="INFO">Opening browser 'chrome' to base url 'http://172.30.10.130'</msg>
-<status status="PASS" endtime="20151113 13:36:11.235" starttime="20151113 13:36:03.488"></status>
+<msg timestamp="20151130 13:30:15.443" level="INFO">Opening browser 'firefox' to base url 'http://172.30.10.130'</msg>
+<status status="PASS" endtime="20151130 13:30:17.810" starttime="20151130 13:30:15.442"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20151113 13:36:11.429" starttime="20151113 13:36:11.236"></status>
+<status status="PASS" endtime="20151130 13:30:17.821" starttime="20151130 13:30:17.811"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -294,8 +366,8 @@
 <arg>id=id_username</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:11.430" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
-<status status="PASS" endtime="20151113 13:36:11.517" starttime="20151113 13:36:11.430"></status>
+<msg timestamp="20151130 13:30:17.822" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
+<status status="PASS" endtime="20151130 13:30:17.940" starttime="20151130 13:30:17.822"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into text field identified by `locator`.</doc>
@@ -303,25 +375,25 @@
 <arg>id=id_password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:11.518" level="INFO">Typing password into text field 'id=id_password'</msg>
-<status status="PASS" endtime="20151113 13:36:11.619" starttime="20151113 13:36:11.517"></status>
+<msg timestamp="20151130 13:30:17.941" level="INFO">Typing password into text field 'id=id_password'</msg>
+<status status="PASS" endtime="20151130 13:30:18.125" starttime="20151130 13:30:17.941"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>css=[type=submit]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:11.620" level="INFO">Clicking button 'css=[type=submit]'.</msg>
-<status status="PASS" endtime="20151113 13:36:11.715" starttime="20151113 13:36:11.620"></status>
+<msg timestamp="20151130 13:30:18.127" level="INFO">Clicking button 'css=[type=submit]'.</msg>
+<status status="PASS" endtime="20151130 13:30:19.461" starttime="20151130 13:30:18.126"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>id=user_info</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:13.352" starttime="20151113 13:36:11.715"></status>
+<status status="PASS" endtime="20151130 13:30:19.473" starttime="20151130 13:30:19.461"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:36:13.352" starttime="20151113 13:36:03.487"></status>
+<status status="PASS" endtime="20151130 13:30:19.475" starttime="20151130 13:30:15.436"></status>
 </kw>
 <kw name="点击默认设置" library="MyFlow">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
@@ -329,39 +401,39 @@
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:13.384" starttime="20151113 13:36:13.354"></status>
+<status status="PASS" endtime="20151130 13:30:19.498" starttime="20151130 13:30:19.476"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:13.385" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:13.433" starttime="20151113 13:36:13.384"></status>
+<msg timestamp="20151130 13:30:19.499" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:19.601" starttime="20151130 13:30:19.498"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:13.716" starttime="20151113 13:36:13.434"></status>
+<status status="PASS" endtime="20151130 13:30:19.857" starttime="20151130 13:30:19.601"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:13.717" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:13.786" starttime="20151113 13:36:13.716"></status>
+<msg timestamp="20151130 13:30:19.858" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:20.507" starttime="20151130 13:30:19.857"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:14.422" starttime="20151113 13:36:13.787"></status>
+<status status="PASS" endtime="20151130 13:30:20.517" starttime="20151130 13:30:20.508"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:36:14.423" starttime="20151113 13:36:13.353"></status>
+<status status="PASS" endtime="20151130 13:30:20.517" starttime="20151130 13:30:19.475"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -369,8 +441,8 @@
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 <arg>${username-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:14.425" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_username"]'</msg>
-<status status="PASS" endtime="20151113 13:36:14.520" starttime="20151113 13:36:14.424"></status>
+<msg timestamp="20151130 13:30:20.519" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_username"]'</msg>
+<status status="PASS" endtime="20151130 13:30:20.620" starttime="20151130 13:30:20.518"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -378,8 +450,8 @@
 <arg>Xpath=//input[@id="id_default_pwd"]</arg>
 <arg>${EMPTY}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:14.523" level="INFO">Typing text '' into text field 'Xpath=//input[@id="id_default_pwd"]'</msg>
-<status status="PASS" endtime="20151113 13:36:14.653" starttime="20151113 13:36:14.521"></status>
+<msg timestamp="20151130 13:30:20.622" level="INFO">Typing text '' into text field 'Xpath=//input[@id="id_default_pwd"]'</msg>
+<status status="PASS" endtime="20151130 13:30:20.689" starttime="20151130 13:30:20.621"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -387,45 +459,45 @@
 <arg>Xpath=//input[@id="id_confirm_pwd"]</arg>
 <arg>${password-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:14.654" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_confirm_pwd"]'</msg>
-<status status="PASS" endtime="20151113 13:36:14.770" starttime="20151113 13:36:14.653"></status>
+<msg timestamp="20151130 13:30:20.691" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_confirm_pwd"]'</msg>
+<status status="PASS" endtime="20151130 13:30:20.819" starttime="20151130 13:30:20.690"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//button[@type="submit"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:14.771" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:14.865" starttime="20151113 13:36:14.771"></status>
+<msg timestamp="20151130 13:30:20.821" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:21.307" starttime="20151130 13:30:20.821"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>Xpath=//label[@for="id_default_pwd"]/following-sibling::span[@class="help-inline"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:15.449" starttime="20151113 13:36:14.866"></status>
+<status status="PASS" endtime="20151130 13:30:21.319" starttime="20151130 13:30:21.307"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies element identified by `locator` is found on the current page.</doc>
 <arguments>
 <arg>Xpath=//label[@for="id_default_pwd"]/following-sibling::span[@class="help-inline"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:15.465" level="INFO">Current page contains element 'Xpath=//label[@for="id_default_pwd"]/following-sibling::span[@class="help-inline"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:15.466" starttime="20151113 13:36:15.451"></status>
+<msg timestamp="20151130 13:30:21.331" level="INFO">Current page contains element 'Xpath=//label[@for="id_default_pwd"]/following-sibling::span[@class="help-inline"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:21.331" starttime="20151130 13:30:21.319"></status>
 </kw>
 <kw name="关闭浏览器" library="MyKeyword">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20151113 13:36:16.934" starttime="20151113 13:36:15.469"></status>
+<status status="PASS" endtime="20151130 13:30:21.366" starttime="20151130 13:30:21.332"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:36:16.935" starttime="20151113 13:36:15.467"></status>
+<status status="PASS" endtime="20151130 13:30:21.366" starttime="20151130 13:30:21.332"></status>
 </kw>
 <doc>Default Configuration页面，不输入password</doc>
 <tags>
 <tag>DefaultConfiguration</tag>
 <tag>done</tag>
 </tags>
-<status status="PASS" endtime="20151113 13:36:16.936" critical="yes" starttime="20151113 13:36:03.486"></status>
+<status status="PASS" endtime="20151130 13:30:21.370" critical="yes" starttime="20151130 13:30:15.435"></status>
 </test>
 <test id="s1-s1-t4" name="Default_004">
 <kw name="登录web页面" library="MyFlow">
@@ -441,12 +513,12 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:16.943" level="INFO">Opening browser 'chrome' to base url 'http://172.30.10.130'</msg>
-<status status="PASS" endtime="20151113 13:36:22.736" starttime="20151113 13:36:16.941"></status>
+<msg timestamp="20151130 13:30:21.380" level="INFO">Opening browser 'firefox' to base url 'http://172.30.10.130'</msg>
+<status status="PASS" endtime="20151130 13:30:23.816" starttime="20151130 13:30:21.375"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20151113 13:36:22.924" starttime="20151113 13:36:22.737"></status>
+<status status="PASS" endtime="20151130 13:30:23.835" starttime="20151130 13:30:23.816"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -454,8 +526,8 @@
 <arg>id=id_username</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:22.925" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
-<status status="PASS" endtime="20151113 13:36:23.014" starttime="20151113 13:36:22.924"></status>
+<msg timestamp="20151130 13:30:23.836" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
+<status status="PASS" endtime="20151130 13:30:23.996" starttime="20151130 13:30:23.835"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into text field identified by `locator`.</doc>
@@ -463,25 +535,25 @@
 <arg>id=id_password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:23.015" level="INFO">Typing password into text field 'id=id_password'</msg>
-<status status="PASS" endtime="20151113 13:36:23.116" starttime="20151113 13:36:23.014"></status>
+<msg timestamp="20151130 13:30:23.998" level="INFO">Typing password into text field 'id=id_password'</msg>
+<status status="PASS" endtime="20151130 13:30:24.105" starttime="20151130 13:30:23.996"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>css=[type=submit]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:23.118" level="INFO">Clicking button 'css=[type=submit]'.</msg>
-<status status="PASS" endtime="20151113 13:36:23.203" starttime="20151113 13:36:23.117"></status>
+<msg timestamp="20151130 13:30:24.106" level="INFO">Clicking button 'css=[type=submit]'.</msg>
+<status status="PASS" endtime="20151130 13:30:25.788" starttime="20151130 13:30:24.106"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>id=user_info</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:25.166" starttime="20151113 13:36:23.203"></status>
+<status status="PASS" endtime="20151130 13:30:25.802" starttime="20151130 13:30:25.788"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:36:25.167" starttime="20151113 13:36:16.940"></status>
+<status status="PASS" endtime="20151130 13:30:25.802" starttime="20151130 13:30:21.373"></status>
 </kw>
 <kw name="点击默认设置" library="MyFlow">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
@@ -489,39 +561,39 @@
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:25.203" starttime="20151113 13:36:25.168"></status>
+<status status="PASS" endtime="20151130 13:30:25.830" starttime="20151130 13:30:25.804"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:25.205" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:25.252" starttime="20151113 13:36:25.204"></status>
+<msg timestamp="20151130 13:30:25.831" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:25.905" starttime="20151130 13:30:25.830"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:25.547" starttime="20151113 13:36:25.253"></status>
+<status status="PASS" endtime="20151130 13:30:26.162" starttime="20151130 13:30:25.905"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:25.548" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:25.606" starttime="20151113 13:36:25.548"></status>
+<msg timestamp="20151130 13:30:26.163" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:26.719" starttime="20151130 13:30:26.163"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:26.271" starttime="20151113 13:36:25.607"></status>
+<status status="PASS" endtime="20151130 13:30:26.730" starttime="20151130 13:30:26.719"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:36:26.272" starttime="20151113 13:36:25.167"></status>
+<status status="PASS" endtime="20151130 13:30:26.731" starttime="20151130 13:30:25.803"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -529,8 +601,8 @@
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 <arg>${username-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:26.274" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_username"]'</msg>
-<status status="PASS" endtime="20151113 13:36:26.399" starttime="20151113 13:36:26.273"></status>
+<msg timestamp="20151130 13:30:26.732" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_username"]'</msg>
+<status status="PASS" endtime="20151130 13:30:26.852" starttime="20151130 13:30:26.732"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -538,8 +610,8 @@
 <arg>Xpath=//input[@id="id_default_pwd"]</arg>
 <arg>${password-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:26.401" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_pwd"]'</msg>
-<status status="PASS" endtime="20151113 13:36:26.548" starttime="20151113 13:36:26.400"></status>
+<msg timestamp="20151130 13:30:26.853" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_pwd"]'</msg>
+<status status="PASS" endtime="20151130 13:30:26.966" starttime="20151130 13:30:26.852"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -547,45 +619,45 @@
 <arg>Xpath=//input[@id="id_confirm_pwd"]</arg>
 <arg>${EMPTY}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:26.549" level="INFO">Typing text '' into text field 'Xpath=//input[@id="id_confirm_pwd"]'</msg>
-<status status="PASS" endtime="20151113 13:36:26.687" starttime="20151113 13:36:26.548"></status>
+<msg timestamp="20151130 13:30:26.967" level="INFO">Typing text '' into text field 'Xpath=//input[@id="id_confirm_pwd"]'</msg>
+<status status="PASS" endtime="20151130 13:30:27.033" starttime="20151130 13:30:26.966"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//button[@type="submit"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:26.691" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:26.778" starttime="20151113 13:36:26.690"></status>
+<msg timestamp="20151130 13:30:27.034" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:27.492" starttime="20151130 13:30:27.034"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>Xpath=//label[@for="id_confirm_pwd"]/following-sibling::span[@class="help-inline"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:27.358" starttime="20151113 13:36:26.779"></status>
+<status status="PASS" endtime="20151130 13:30:27.505" starttime="20151130 13:30:27.493"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies element identified by `locator` is found on the current page.</doc>
 <arguments>
 <arg>Xpath=//label[@for="id_confirm_pwd"]/following-sibling::span[@class="help-inline"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:27.368" level="INFO">Current page contains element 'Xpath=//label[@for="id_confirm_pwd"]/following-sibling::span[@class="help-inline"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:27.369" starttime="20151113 13:36:27.359"></status>
+<msg timestamp="20151130 13:30:27.513" level="INFO">Current page contains element 'Xpath=//label[@for="id_confirm_pwd"]/following-sibling::span[@class="help-inline"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:27.514" starttime="20151130 13:30:27.505"></status>
 </kw>
 <kw name="关闭浏览器" library="MyKeyword">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20151113 13:36:28.662" starttime="20151113 13:36:27.371"></status>
+<status status="PASS" endtime="20151130 13:30:27.545" starttime="20151130 13:30:27.515"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:36:28.663" starttime="20151113 13:36:27.370"></status>
+<status status="PASS" endtime="20151130 13:30:27.545" starttime="20151130 13:30:27.514"></status>
 </kw>
 <doc>Default Configuration页面，不输入confirm password</doc>
 <tags>
 <tag>DefaultConfiguration</tag>
 <tag>done</tag>
 </tags>
-<status status="PASS" endtime="20151113 13:36:28.666" critical="yes" starttime="20151113 13:36:16.938"></status>
+<status status="PASS" endtime="20151130 13:30:27.546" critical="yes" starttime="20151130 13:30:21.371"></status>
 </test>
 <test id="s1-s1-t5" name="Default_005">
 <kw name="登录web页面" library="MyFlow">
@@ -601,12 +673,12 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:28.673" level="INFO">Opening browser 'chrome' to base url 'http://172.30.10.130'</msg>
-<status status="PASS" endtime="20151113 13:36:34.777" starttime="20151113 13:36:28.672"></status>
+<msg timestamp="20151130 13:30:27.557" level="INFO">Opening browser 'firefox' to base url 'http://172.30.10.130'</msg>
+<status status="PASS" endtime="20151130 13:30:30.178" starttime="20151130 13:30:27.556"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20151113 13:36:34.967" starttime="20151113 13:36:34.778"></status>
+<status status="PASS" endtime="20151130 13:30:30.191" starttime="20151130 13:30:30.179"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -614,8 +686,8 @@
 <arg>id=id_username</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:34.968" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
-<status status="PASS" endtime="20151113 13:36:35.069" starttime="20151113 13:36:34.968"></status>
+<msg timestamp="20151130 13:30:30.194" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
+<status status="PASS" endtime="20151130 13:30:30.337" starttime="20151130 13:30:30.192"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into text field identified by `locator`.</doc>
@@ -623,25 +695,25 @@
 <arg>id=id_password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:35.071" level="INFO">Typing password into text field 'id=id_password'</msg>
-<status status="PASS" endtime="20151113 13:36:35.183" starttime="20151113 13:36:35.070"></status>
+<msg timestamp="20151130 13:30:30.338" level="INFO">Typing password into text field 'id=id_password'</msg>
+<status status="PASS" endtime="20151130 13:30:30.474" starttime="20151130 13:30:30.337"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>css=[type=submit]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:35.184" level="INFO">Clicking button 'css=[type=submit]'.</msg>
-<status status="PASS" endtime="20151113 13:36:35.277" starttime="20151113 13:36:35.183"></status>
+<msg timestamp="20151130 13:30:30.475" level="INFO">Clicking button 'css=[type=submit]'.</msg>
+<status status="PASS" endtime="20151130 13:30:32.111" starttime="20151130 13:30:30.475"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>id=user_info</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:37.422" starttime="20151113 13:36:35.278"></status>
+<status status="PASS" endtime="20151130 13:30:32.124" starttime="20151130 13:30:32.111"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:36:37.423" starttime="20151113 13:36:28.670"></status>
+<status status="PASS" endtime="20151130 13:30:32.124" starttime="20151130 13:30:27.551"></status>
 </kw>
 <kw name="点击默认设置" library="MyFlow">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
@@ -649,39 +721,39 @@
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:37.464" starttime="20151113 13:36:37.425"></status>
+<status status="PASS" endtime="20151130 13:30:32.149" starttime="20151130 13:30:32.126"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:37.465" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:37.511" starttime="20151113 13:36:37.464"></status>
+<msg timestamp="20151130 13:30:32.150" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:32.223" starttime="20151130 13:30:32.149"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:37.785" starttime="20151113 13:36:37.512"></status>
+<status status="PASS" endtime="20151130 13:30:32.489" starttime="20151130 13:30:32.223"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:37.786" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:37.849" starttime="20151113 13:36:37.785"></status>
+<msg timestamp="20151130 13:30:32.490" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:33.117" starttime="20151130 13:30:32.489"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:38.507" starttime="20151113 13:36:37.849"></status>
+<status status="PASS" endtime="20151130 13:30:33.129" starttime="20151130 13:30:33.117"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:36:38.508" starttime="20151113 13:36:37.424"></status>
+<status status="PASS" endtime="20151130 13:30:33.130" starttime="20151130 13:30:32.125"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -689,8 +761,8 @@
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 <arg>${username-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:38.511" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_username"]'</msg>
-<status status="PASS" endtime="20151113 13:36:38.606" starttime="20151113 13:36:38.510"></status>
+<msg timestamp="20151130 13:30:33.132" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_username"]'</msg>
+<status status="PASS" endtime="20151130 13:30:33.247" starttime="20151130 13:30:33.131"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -698,8 +770,8 @@
 <arg>Xpath=//input[@id="id_default_pwd"]</arg>
 <arg>${password-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:38.609" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_pwd"]'</msg>
-<status status="PASS" endtime="20151113 13:36:38.749" starttime="20151113 13:36:38.608"></status>
+<msg timestamp="20151130 13:30:33.248" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_pwd"]'</msg>
+<status status="PASS" endtime="20151130 13:30:33.348" starttime="20151130 13:30:33.248"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -707,52 +779,52 @@
 <arg>Xpath=//input[@id="id_confirm_pwd"]</arg>
 <arg>${SPACE*2}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:38.754" level="INFO">Typing text '  ' into text field 'Xpath=//input[@id="id_confirm_pwd"]'</msg>
-<status status="PASS" endtime="20151113 13:36:38.887" starttime="20151113 13:36:38.752"></status>
+<msg timestamp="20151130 13:30:33.350" level="INFO">Typing text '  ' into text field 'Xpath=//input[@id="id_confirm_pwd"]'</msg>
+<status status="PASS" endtime="20151130 13:30:33.429" starttime="20151130 13:30:33.349"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//button[@type="submit"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:38.890" level="INFO">Clicking element 'Xpath=//button[@type="submit"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:38.966" starttime="20151113 13:36:38.890"></status>
+<msg timestamp="20151130 13:30:33.430" level="INFO">Clicking element 'Xpath=//button[@type="submit"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:33.959" starttime="20151130 13:30:33.430"></status>
 </kw>
 <kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
 <arguments>
 <arg>8~9行，检测是否出现告警</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:38.995" starttime="20151113 13:36:38.967"></status>
+<status status="PASS" endtime="20151130 13:30:33.960" starttime="20151130 13:30:33.959"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>Xpath=//div[@class="alert alert-message alert-error"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:39.275" starttime="20151113 13:36:38.995"></status>
+<status status="PASS" endtime="20151130 13:30:33.968" starttime="20151130 13:30:33.960"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies element identified by `locator` is found on the current page.</doc>
 <arguments>
 <arg>Xpath=//div[@class="alert alert-message alert-error"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:39.293" level="INFO">Current page contains element 'Xpath=//div[@class="alert alert-message alert-error"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:39.293" starttime="20151113 13:36:39.276"></status>
+<msg timestamp="20151130 13:30:33.976" level="INFO">Current page contains element 'Xpath=//div[@class="alert alert-message alert-error"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:33.977" starttime="20151130 13:30:33.970"></status>
 </kw>
 <kw name="关闭浏览器" library="MyKeyword">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20151113 13:36:40.522" starttime="20151113 13:36:39.295"></status>
+<status status="PASS" endtime="20151130 13:30:34.025" starttime="20151130 13:30:33.978"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:36:40.523" starttime="20151113 13:36:39.294"></status>
+<status status="PASS" endtime="20151130 13:30:34.026" starttime="20151130 13:30:33.977"></status>
 </kw>
 <doc>Default Configuration页面，密码和confirm password不一致</doc>
 <tags>
 <tag>DefaultConfiguration</tag>
 <tag>done</tag>
 </tags>
-<status status="PASS" endtime="20151113 13:36:40.525" critical="yes" starttime="20151113 13:36:28.668"></status>
+<status status="PASS" endtime="20151130 13:30:34.029" critical="yes" starttime="20151130 13:30:27.550"></status>
 </test>
 <test id="s1-s1-t6" name="Default_006">
 <kw name="登录web页面" library="MyFlow">
@@ -768,12 +840,12 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:40.533" level="INFO">Opening browser 'chrome' to base url 'http://172.30.10.130'</msg>
-<status status="PASS" endtime="20151113 13:36:46.034" starttime="20151113 13:36:40.532"></status>
+<msg timestamp="20151130 13:30:34.039" level="INFO">Opening browser 'firefox' to base url 'http://172.30.10.130'</msg>
+<status status="PASS" endtime="20151130 13:30:36.456" starttime="20151130 13:30:34.038"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20151113 13:36:46.236" starttime="20151113 13:36:46.035"></status>
+<status status="PASS" endtime="20151130 13:30:36.466" starttime="20151130 13:30:36.456"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -781,8 +853,8 @@
 <arg>id=id_username</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:46.237" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
-<status status="PASS" endtime="20151113 13:36:46.322" starttime="20151113 13:36:46.236"></status>
+<msg timestamp="20151130 13:30:36.467" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
+<status status="PASS" endtime="20151130 13:30:36.596" starttime="20151130 13:30:36.467"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into text field identified by `locator`.</doc>
@@ -790,25 +862,25 @@
 <arg>id=id_password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:46.323" level="INFO">Typing password into text field 'id=id_password'</msg>
-<status status="PASS" endtime="20151113 13:36:46.437" starttime="20151113 13:36:46.322"></status>
+<msg timestamp="20151130 13:30:36.597" level="INFO">Typing password into text field 'id=id_password'</msg>
+<status status="PASS" endtime="20151130 13:30:36.668" starttime="20151130 13:30:36.596"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>css=[type=submit]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:46.438" level="INFO">Clicking button 'css=[type=submit]'.</msg>
-<status status="PASS" endtime="20151113 13:36:46.543" starttime="20151113 13:36:46.438"></status>
+<msg timestamp="20151130 13:30:36.669" level="INFO">Clicking button 'css=[type=submit]'.</msg>
+<status status="PASS" endtime="20151130 13:30:39.183" starttime="20151130 13:30:36.668"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>id=user_info</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:48.755" starttime="20151113 13:36:46.544"></status>
+<status status="PASS" endtime="20151130 13:30:39.210" starttime="20151130 13:30:39.184"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:36:48.756" starttime="20151113 13:36:40.530"></status>
+<status status="PASS" endtime="20151130 13:30:39.211" starttime="20151130 13:30:34.037"></status>
 </kw>
 <kw name="点击默认设置" library="MyFlow">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
@@ -816,39 +888,39 @@
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:48.787" starttime="20151113 13:36:48.757"></status>
+<status status="PASS" endtime="20151130 13:30:39.244" starttime="20151130 13:30:39.213"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:48.788" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:48.834" starttime="20151113 13:36:48.787"></status>
+<msg timestamp="20151130 13:30:39.244" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:39.314" starttime="20151130 13:30:39.244"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:49.108" starttime="20151113 13:36:48.834"></status>
+<status status="PASS" endtime="20151130 13:30:39.552" starttime="20151130 13:30:39.314"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:49.110" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:49.168" starttime="20151113 13:36:49.109"></status>
+<msg timestamp="20151130 13:30:39.554" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:39.664" starttime="20151130 13:30:39.553"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:49.957" starttime="20151113 13:36:49.169"></status>
+<status status="PASS" endtime="20151130 13:30:40.176" starttime="20151130 13:30:39.665"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:36:49.957" starttime="20151113 13:36:48.757"></status>
+<status status="PASS" endtime="20151130 13:30:40.176" starttime="20151130 13:30:39.212"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -856,8 +928,8 @@
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 <arg>${username-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:49.959" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_username"]'</msg>
-<status status="PASS" endtime="20151113 13:36:50.048" starttime="20151113 13:36:49.958"></status>
+<msg timestamp="20151130 13:30:40.177" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_username"]'</msg>
+<status status="PASS" endtime="20151130 13:30:40.276" starttime="20151130 13:30:40.177"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -865,8 +937,8 @@
 <arg>Xpath=//input[@id="id_default_pwd"]</arg>
 <arg>${password-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:50.050" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_pwd"]'</msg>
-<status status="PASS" endtime="20151113 13:36:50.209" starttime="20151113 13:36:50.049"></status>
+<msg timestamp="20151130 13:30:40.278" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_pwd"]'</msg>
+<status status="PASS" endtime="20151130 13:30:40.377" starttime="20151130 13:30:40.277"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -874,16 +946,16 @@
 <arg>Xpath=//input[@id="id_confirm_pwd"]</arg>
 <arg>${password-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:50.210" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_confirm_pwd"]'</msg>
-<status status="PASS" endtime="20151113 13:36:50.344" starttime="20151113 13:36:50.209"></status>
+<msg timestamp="20151130 13:30:40.378" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_confirm_pwd"]'</msg>
+<status status="PASS" endtime="20151130 13:30:40.461" starttime="20151130 13:30:40.377"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//button[@type="submit"]</arg>
 </arguments>
-<msg timestamp="20151113 13:36:50.345" level="INFO">Clicking element 'Xpath=//button[@type="submit"]'.</msg>
-<status status="PASS" endtime="20151113 13:36:50.427" starttime="20151113 13:36:50.345"></status>
+<msg timestamp="20151130 13:30:40.463" level="INFO">Clicking element 'Xpath=//button[@type="submit"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:41.957" starttime="20151130 13:30:40.462"></status>
 </kw>
 <kw name="提示成功" library="MyKeyword">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -892,9 +964,9 @@
 <arg>xPath=/html/body/div[1]/div[2]/div[1]/div[@class='alert alert-block alert-success fade in']</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:52.013" starttime="20151113 13:36:50.430"></status>
+<status status="PASS" endtime="20151130 13:30:41.970" starttime="20151130 13:30:41.959"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:36:52.013" starttime="20151113 13:36:50.428"></status>
+<status status="PASS" endtime="20151130 13:30:41.970" starttime="20151130 13:30:41.958"></status>
 </kw>
 <kw name="获取实际的BMC用户名和密码">
 <assign>
@@ -906,7 +978,7 @@
 <arguments>
 <arg>${ip-mn}</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:52.016" starttime="20151113 13:36:52.015"></status>
+<status status="PASS" endtime="20151130 13:30:41.973" starttime="20151130 13:30:41.972"></status>
 </kw>
 <kw name="Login" library="SSHLibrary">
 <doc>Logs into the SSH server with the given `username` and `password`.</doc>
@@ -914,10 +986,10 @@
 <arg>${username-mn}</arg>
 <arg>${password-mn}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:52.017" level="INFO">Logging into '172.30.10.130:22' as 'root'.</msg>
-<msg timestamp="20151113 13:36:53.210" level="INFO">Read output: Last login: Thu Nov 12 09:48:29 2015 from 172.24.18.173
+<msg timestamp="20151130 13:30:41.974" level="INFO">Logging into '172.30.10.130:22' as 'root'.</msg>
+<msg timestamp="20151130 13:30:43.161" level="INFO">Read output: Last login: Mon Nov 30 13:23:10 2015 from 172.24.18.171
 [root@localhost ~]#</msg>
-<status status="PASS" endtime="20151113 13:36:53.210" starttime="20151113 13:36:52.016"></status>
+<status status="PASS" endtime="20151130 13:30:43.163" starttime="20151130 13:30:41.973"></status>
 </kw>
 <kw name="Execute Command" library="SSHLibrary">
 <doc>Executes `command` on the remote machine and returns its outputs.</doc>
@@ -927,21 +999,21 @@
 <assign>
 <var>${stdout}</var>
 </assign>
-<msg timestamp="20151113 13:36:53.212" level="INFO">Executing command 'tabdump passwd'.</msg>
-<msg timestamp="20151113 13:36:54.464" level="INFO">Command exited with return code 0.</msg>
-<msg timestamp="20151113 13:36:54.464" level="INFO">${stdout} = #key,username,password,cryptmethod,authdomain,comments,disable
+<msg timestamp="20151130 13:30:43.167" level="INFO">Executing command 'tabdump passwd'.</msg>
+<msg timestamp="20151130 13:30:44.408" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20151130 13:30:44.409" level="INFO">${stdout} = #key,username,password,cryptmethod,authdomain,comments,disable
 "xcat","root","teamsun",,,,
 "system","root","teamsun",,,,
 "omapi","xcat_key","V1dyS1lYQWdUQmxIaENKTUw0Z25McTBhTTZobm96R3I=",,,,
 "ipmi","a...</msg>
-<status status="PASS" endtime="20151113 13:36:54.465" starttime="20151113 13:36:53.211"></status>
+<status status="PASS" endtime="20151130 13:30:44.409" starttime="20151130 13:30:43.165"></status>
 </kw>
 <kw name="Import Library" library="BuiltIn">
 <doc>Imports a library with the given name and optional arguments.</doc>
 <arguments>
 <arg>String</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:54.487" starttime="20151113 13:36:54.465"></status>
+<status status="PASS" endtime="20151130 13:30:44.510" starttime="20151130 13:30:44.413"></status>
 </kw>
 <kw name="Get Lines Containing String" library="String">
 <doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
@@ -952,9 +1024,9 @@
 <assign>
 <var>${ipmiline}</var>
 </assign>
-<msg timestamp="20151113 13:36:54.488" level="INFO">1 out of 5 lines matched</msg>
-<msg timestamp="20151113 13:36:54.489" level="INFO">${ipmiline} = "ipmi","admin","admin",,,,</msg>
-<status status="PASS" endtime="20151113 13:36:54.489" starttime="20151113 13:36:54.488"></status>
+<msg timestamp="20151130 13:30:44.511" level="INFO">1 out of 5 lines matched</msg>
+<msg timestamp="20151130 13:30:44.511" level="INFO">${ipmiline} = "ipmi","admin","admin",,,,</msg>
+<status status="PASS" endtime="20151130 13:30:44.511" starttime="20151130 13:30:44.510"></status>
 </kw>
 <kw name="Split String" library="String">
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
@@ -965,8 +1037,8 @@
 <assign>
 <var>@{BMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:36:54.490" level="INFO">@{BMCdefault} = [ "ipmi" | "admin" | "admin" |  |  |  |  ]</msg>
-<status status="PASS" endtime="20151113 13:36:54.490" starttime="20151113 13:36:54.489"></status>
+<msg timestamp="20151130 13:30:44.513" level="INFO">@{BMCdefault} = [ "ipmi" | "admin" | "admin" |  |  |  |  ]</msg>
+<status status="PASS" endtime="20151130 13:30:44.514" starttime="20151130 13:30:44.512"></status>
 </kw>
 <kw name="Split String" library="String">
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
@@ -977,8 +1049,8 @@
 <assign>
 <var>@{usernameBMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:36:54.491" level="INFO">@{usernameBMCdefault} = [  | admin |  ]</msg>
-<status status="PASS" endtime="20151113 13:36:54.492" starttime="20151113 13:36:54.490"></status>
+<msg timestamp="20151130 13:30:44.515" level="INFO">@{usernameBMCdefault} = [  | admin |  ]</msg>
+<status status="PASS" endtime="20151130 13:30:44.515" starttime="20151130 13:30:44.514"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -988,8 +1060,8 @@
 <assign>
 <var>${usernameBMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:36:54.493" level="INFO">${usernameBMCdefault} = admin</msg>
-<status status="PASS" endtime="20151113 13:36:54.493" starttime="20151113 13:36:54.492"></status>
+<msg timestamp="20151130 13:30:44.516" level="INFO">${usernameBMCdefault} = admin</msg>
+<status status="PASS" endtime="20151130 13:30:44.516" starttime="20151130 13:30:44.515"></status>
 </kw>
 <kw name="Split String" library="String">
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
@@ -1000,8 +1072,8 @@
 <assign>
 <var>@{passwordBMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:36:54.494" level="INFO">@{passwordBMCdefault} = [  | admin |  ]</msg>
-<status status="PASS" endtime="20151113 13:36:54.495" starttime="20151113 13:36:54.493"></status>
+<msg timestamp="20151130 13:30:44.517" level="INFO">@{passwordBMCdefault} = [  | admin |  ]</msg>
+<status status="PASS" endtime="20151130 13:30:44.517" starttime="20151130 13:30:44.516"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -1011,12 +1083,12 @@
 <assign>
 <var>${passwordBMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:36:54.496" level="INFO">${passwordBMCdefault} = admin</msg>
-<status status="PASS" endtime="20151113 13:36:54.496" starttime="20151113 13:36:54.495"></status>
+<msg timestamp="20151130 13:30:44.518" level="INFO">${passwordBMCdefault} = admin</msg>
+<status status="PASS" endtime="20151130 13:30:44.518" starttime="20151130 13:30:44.517"></status>
 </kw>
-<msg timestamp="20151113 13:36:54.497" level="INFO">${username-BMC-default} = admin</msg>
-<msg timestamp="20151113 13:36:54.497" level="INFO">${password-BMC-default} = admin</msg>
-<status status="PASS" endtime="20151113 13:36:54.497" starttime="20151113 13:36:52.015"></status>
+<msg timestamp="20151130 13:30:44.519" level="INFO">${username-BMC-default} = admin</msg>
+<msg timestamp="20151130 13:30:44.519" level="INFO">${password-BMC-default} = admin</msg>
+<status status="PASS" endtime="20151130 13:30:44.519" starttime="20151130 13:30:41.971"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -1024,7 +1096,7 @@
 <arg>${username-BMC-default}</arg>
 <arg>${username-BMC}</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:54.499" starttime="20151113 13:36:54.498"></status>
+<status status="PASS" endtime="20151130 13:30:44.520" starttime="20151130 13:30:44.520"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -1032,21 +1104,21 @@
 <arg>${password-BMC-default}</arg>
 <arg>${password-BMC}</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:36:54.502" starttime="20151113 13:36:54.501"></status>
+<status status="PASS" endtime="20151130 13:30:44.522" starttime="20151130 13:30:44.521"></status>
 </kw>
 <kw name="关闭浏览器" library="MyKeyword">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20151113 13:36:55.990" starttime="20151113 13:36:54.503"></status>
+<status status="PASS" endtime="20151130 13:30:44.558" starttime="20151130 13:30:44.523"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:36:55.992" starttime="20151113 13:36:54.503"></status>
+<status status="PASS" endtime="20151130 13:30:44.558" starttime="20151130 13:30:44.522"></status>
 </kw>
 <doc>Default Configuration页面，密码和confirm passwor一致</doc>
 <tags>
 <tag>DefaultConfiguration</tag>
 <tag>done</tag>
 </tags>
-<status status="PASS" endtime="20151113 13:36:55.994" critical="yes" starttime="20151113 13:36:40.527"></status>
+<status status="PASS" endtime="20151130 13:30:44.559" critical="yes" starttime="20151130 13:30:34.031"></status>
 </test>
 <test id="s1-s1-t7" name="Default_007">
 <kw name="登录web页面" library="MyFlow">
@@ -1062,12 +1134,12 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20151113 13:36:56.018" level="INFO">Opening browser 'chrome' to base url 'http://172.30.10.130'</msg>
-<status status="PASS" endtime="20151113 13:37:01.924" starttime="20151113 13:36:56.017"></status>
+<msg timestamp="20151130 13:30:44.565" level="INFO">Opening browser 'firefox' to base url 'http://172.30.10.130'</msg>
+<status status="PASS" endtime="20151130 13:30:47.070" starttime="20151130 13:30:44.565"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20151113 13:37:02.113" starttime="20151113 13:37:01.925"></status>
+<status status="PASS" endtime="20151130 13:30:47.088" starttime="20151130 13:30:47.071"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1075,8 +1147,8 @@
 <arg>id=id_username</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:02.114" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
-<status status="PASS" endtime="20151113 13:37:02.196" starttime="20151113 13:37:02.113"></status>
+<msg timestamp="20151130 13:30:47.089" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
+<status status="PASS" endtime="20151130 13:30:47.213" starttime="20151130 13:30:47.089"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into text field identified by `locator`.</doc>
@@ -1084,25 +1156,25 @@
 <arg>id=id_password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:02.197" level="INFO">Typing password into text field 'id=id_password'</msg>
-<status status="PASS" endtime="20151113 13:37:02.318" starttime="20151113 13:37:02.197"></status>
+<msg timestamp="20151130 13:30:47.214" level="INFO">Typing password into text field 'id=id_password'</msg>
+<status status="PASS" endtime="20151130 13:30:47.359" starttime="20151130 13:30:47.213"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>css=[type=submit]</arg>
 </arguments>
-<msg timestamp="20151113 13:37:02.320" level="INFO">Clicking button 'css=[type=submit]'.</msg>
-<status status="PASS" endtime="20151113 13:37:02.411" starttime="20151113 13:37:02.319"></status>
+<msg timestamp="20151130 13:30:47.360" level="INFO">Clicking button 'css=[type=submit]'.</msg>
+<status status="PASS" endtime="20151130 13:30:48.958" starttime="20151130 13:30:47.359"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>id=user_info</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:03.941" starttime="20151113 13:37:02.412"></status>
+<status status="PASS" endtime="20151130 13:30:48.972" starttime="20151130 13:30:48.958"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:37:03.942" starttime="20151113 13:36:56.015"></status>
+<status status="PASS" endtime="20151130 13:30:48.972" starttime="20151130 13:30:44.563"></status>
 </kw>
 <kw name="点击默认设置" library="MyFlow">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
@@ -1110,39 +1182,39 @@
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:03.976" starttime="20151113 13:37:03.943"></status>
+<status status="PASS" endtime="20151130 13:30:48.994" starttime="20151130 13:30:48.973"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<msg timestamp="20151113 13:37:03.977" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
-<status status="PASS" endtime="20151113 13:37:04.037" starttime="20151113 13:37:03.977"></status>
+<msg timestamp="20151130 13:30:48.995" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:49.066" starttime="20151130 13:30:48.994"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:04.313" starttime="20151113 13:37:04.037"></status>
+<status status="PASS" endtime="20151130 13:30:49.314" starttime="20151130 13:30:49.066"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<msg timestamp="20151113 13:37:04.314" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
-<status status="PASS" endtime="20151113 13:37:04.378" starttime="20151113 13:37:04.313"></status>
+<msg timestamp="20151130 13:30:49.315" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:49.978" starttime="20151130 13:30:49.315"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:05.033" starttime="20151113 13:37:04.378"></status>
+<status status="PASS" endtime="20151130 13:30:49.992" starttime="20151130 13:30:49.979"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:37:05.034" starttime="20151113 13:37:03.942"></status>
+<status status="PASS" endtime="20151130 13:30:49.992" starttime="20151130 13:30:48.973"></status>
 </kw>
 <kw name="创建随机序列">
 <doc>输入一个数字或字母字符串string，和一个不大于字符串长度的自然数n，随机返回一个长度为n的字符串</doc>
@@ -1162,8 +1234,8 @@
 <assign>
 <var>${sample}</var>
 </assign>
-<msg timestamp="20151113 13:37:05.039" level="INFO">${sample} = ['5', '2', 't', '0', 'T', '1', 's', 'V', '6', 'S', 'R', '7', 'a', 'L', 'M', 'v', '8', 'l', 'k', '6', 'H', 'c', 'E', '3', 'i', 'd', 'K', 'N', 'U', 'O', '4', 'm', 'z', 'Z', 'W', '4', 'Q', 'h', 'C', 'D',...</msg>
-<status status="PASS" endtime="20151113 13:37:05.039" starttime="20151113 13:37:05.037"></status>
+<msg timestamp="20151130 13:30:50.014" level="INFO">${sample} = ['w', 'N', 'A', 'X', 'K', 'd', 'k', 'i', '8', 'u', '1', 'U', 'c', 'x', 'r', '0', 'o', 'n', 'f', 'Y', 'C', 'V', 'T', '5', '6', 'l', '9', 'S', '3', 's', 'g', 'Z', 'M', 'H', '7', '2', 'z', 'G', '8', 'q',...</msg>
+<status status="PASS" endtime="20151130 13:30:50.015" starttime="20151130 13:30:49.994"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -1173,19 +1245,19 @@
 <assign>
 <var>${sample}</var>
 </assign>
-<msg timestamp="20151113 13:37:05.042" level="INFO">${sample} = 52t0T1sV6SR7aLMv8lk6HcE3idKNUO4mzZW4QhCD5q0n9pIGoe3y2jXPwfu7x8BF</msg>
-<status status="PASS" endtime="20151113 13:37:05.043" starttime="20151113 13:37:05.040"></status>
+<msg timestamp="20151130 13:30:50.021" level="INFO">${sample} = wNAXKdki8u1Ucxr0onfYCVT56l9S3sgZMH72zG8qvyREapePbOW341m90hLjtQF5</msg>
+<status status="PASS" endtime="20151130 13:30:50.021" starttime="20151130 13:30:50.016"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${sample}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:05.044" level="INFO">52t0T1sV6SR7aLMv8lk6HcE3idKNUO4mzZW4QhCD5q0n9pIGoe3y2jXPwfu7x8BF</msg>
-<status status="PASS" endtime="20151113 13:37:05.044" starttime="20151113 13:37:05.043"></status>
+<msg timestamp="20151130 13:30:50.022" level="INFO">wNAXKdki8u1Ucxr0onfYCVT56l9S3sgZMH72zG8qvyREapePbOW341m90hLjtQF5</msg>
+<status status="PASS" endtime="20151130 13:30:50.022" starttime="20151130 13:30:50.021"></status>
 </kw>
-<msg timestamp="20151113 13:37:05.045" level="INFO">${sample} = 52t0T1sV6SR7aLMv8lk6HcE3idKNUO4mzZW4QhCD5q0n9pIGoe3y2jXPwfu7x8BF</msg>
-<status status="PASS" endtime="20151113 13:37:05.045" starttime="20151113 13:37:05.036"></status>
+<msg timestamp="20151130 13:30:50.023" level="INFO">${sample} = wNAXKdki8u1Ucxr0onfYCVT56l9S3sgZMH72zG8qvyREapePbOW341m90hLjtQF5</msg>
+<status status="PASS" endtime="20151130 13:30:50.023" starttime="20151130 13:30:49.993"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -1195,8 +1267,8 @@
 <assign>
 <var>${username-BMC}</var>
 </assign>
-<msg timestamp="20151113 13:37:05.047" level="INFO">${username-BMC} = 52t0T1sV6SR7aLMv8lk6HcE3idKNUO4mzZW4QhCD5q0n9pIGoe3y2jXPwfu7x8BF</msg>
-<status status="PASS" endtime="20151113 13:37:05.047" starttime="20151113 13:37:05.046"></status>
+<msg timestamp="20151130 13:30:50.025" level="INFO">${username-BMC} = wNAXKdki8u1Ucxr0onfYCVT56l9S3sgZMH72zG8qvyREapePbOW341m90hLjtQF5</msg>
+<status status="PASS" endtime="20151130 13:30:50.025" starttime="20151130 13:30:50.024"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1204,8 +1276,8 @@
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 <arg>${username-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:05.049" level="INFO">Typing text '52t0T1sV6SR7aLMv8lk6HcE3idKNUO4mzZW4QhCD5q0n9pIGoe3y2jXPwfu7x8BF' into text field 'Xpath=//input[@id="id_default_username"]'</msg>
-<status status="PASS" endtime="20151113 13:37:05.256" starttime="20151113 13:37:05.048"></status>
+<msg timestamp="20151130 13:30:50.026" level="INFO">Typing text 'wNAXKdki8u1Ucxr0onfYCVT56l9S3sgZMH72zG8qvyREapePbOW341m90hLjtQF5' into text field 'Xpath=//input[@id="id_default_username"]'</msg>
+<status status="PASS" endtime="20151130 13:30:50.440" starttime="20151130 13:30:50.025"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1213,8 +1285,8 @@
 <arg>Xpath=//input[@id="id_default_pwd"]</arg>
 <arg>${password-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:05.258" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_pwd"]'</msg>
-<status status="PASS" endtime="20151113 13:37:05.755" starttime="20151113 13:37:05.257"></status>
+<msg timestamp="20151130 13:30:50.441" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_pwd"]'</msg>
+<status status="PASS" endtime="20151130 13:30:50.547" starttime="20151130 13:30:50.440"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1222,16 +1294,16 @@
 <arg>Xpath=//input[@id="id_confirm_pwd"]</arg>
 <arg>${password-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:05.758" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_confirm_pwd"]'</msg>
-<status status="PASS" endtime="20151113 13:37:05.876" starttime="20151113 13:37:05.756"></status>
+<msg timestamp="20151130 13:30:50.549" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_confirm_pwd"]'</msg>
+<status status="PASS" endtime="20151130 13:30:50.651" starttime="20151130 13:30:50.548"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//button[@type="submit"]</arg>
 </arguments>
-<msg timestamp="20151113 13:37:05.878" level="INFO">Clicking element 'Xpath=//button[@type="submit"]'.</msg>
-<status status="PASS" endtime="20151113 13:37:05.957" starttime="20151113 13:37:05.877"></status>
+<msg timestamp="20151130 13:30:50.652" level="INFO">Clicking element 'Xpath=//button[@type="submit"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:52.218" starttime="20151130 13:30:50.651"></status>
 </kw>
 <kw name="提示成功" library="MyKeyword">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -1240,9 +1312,9 @@
 <arg>xPath=/html/body/div[1]/div[2]/div[1]/div[@class='alert alert-block alert-success fade in']</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:07.496" starttime="20151113 13:37:05.960"></status>
+<status status="PASS" endtime="20151130 13:30:52.233" starttime="20151130 13:30:52.220"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:37:07.496" starttime="20151113 13:37:05.959"></status>
+<status status="PASS" endtime="20151130 13:30:52.233" starttime="20151130 13:30:52.219"></status>
 </kw>
 <kw name="获取实际的BMC用户名和密码">
 <assign>
@@ -1254,7 +1326,7 @@
 <arguments>
 <arg>${ip-mn}</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:07.500" starttime="20151113 13:37:07.499"></status>
+<status status="PASS" endtime="20151130 13:30:52.236" starttime="20151130 13:30:52.235"></status>
 </kw>
 <kw name="Login" library="SSHLibrary">
 <doc>Logs into the SSH server with the given `username` and `password`.</doc>
@@ -1262,10 +1334,10 @@
 <arg>${username-mn}</arg>
 <arg>${password-mn}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:07.501" level="INFO">Logging into '172.30.10.130:22' as 'root'.</msg>
-<msg timestamp="20151113 13:37:08.662" level="INFO">Read output: Last login: Fri Nov 13 13:36:45 2015 from 172.24.18.173
+<msg timestamp="20151130 13:30:52.240" level="INFO">Logging into '172.30.10.130:22' as 'root'.</msg>
+<msg timestamp="20151130 13:30:53.413" level="INFO">Read output: Last login: Mon Nov 30 13:30:40 2015 from 172.24.18.171
 [root@localhost ~]#</msg>
-<status status="PASS" endtime="20151113 13:37:08.662" starttime="20151113 13:37:07.500"></status>
+<status status="PASS" endtime="20151130 13:30:53.414" starttime="20151130 13:30:52.239"></status>
 </kw>
 <kw name="Execute Command" library="SSHLibrary">
 <doc>Executes `command` on the remote machine and returns its outputs.</doc>
@@ -1275,21 +1347,21 @@
 <assign>
 <var>${stdout}</var>
 </assign>
-<msg timestamp="20151113 13:37:08.663" level="INFO">Executing command 'tabdump passwd'.</msg>
-<msg timestamp="20151113 13:37:09.905" level="INFO">Command exited with return code 0.</msg>
-<msg timestamp="20151113 13:37:09.905" level="INFO">${stdout} = #key,username,password,cryptmethod,authdomain,comments,disable
+<msg timestamp="20151130 13:30:53.416" level="INFO">Executing command 'tabdump passwd'.</msg>
+<msg timestamp="20151130 13:30:54.658" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20151130 13:30:54.659" level="INFO">${stdout} = #key,username,password,cryptmethod,authdomain,comments,disable
 "xcat","root","teamsun",,,,
 "system","root","teamsun",,,,
 "omapi","xcat_key","V1dyS1lYQWdUQmxIaENKTUw0Z25McTBhTTZobm96R3I=",,,,
-"ipmi","5...</msg>
-<status status="PASS" endtime="20151113 13:37:09.906" starttime="20151113 13:37:08.663"></status>
+"ipmi","w...</msg>
+<status status="PASS" endtime="20151130 13:30:54.660" starttime="20151130 13:30:53.415"></status>
 </kw>
 <kw name="Import Library" library="BuiltIn">
 <doc>Imports a library with the given name and optional arguments.</doc>
 <arguments>
 <arg>String</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:09.908" starttime="20151113 13:37:09.906"></status>
+<status status="PASS" endtime="20151130 13:30:54.666" starttime="20151130 13:30:54.661"></status>
 </kw>
 <kw name="Get Lines Containing String" library="String">
 <doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
@@ -1300,9 +1372,9 @@
 <assign>
 <var>${ipmiline}</var>
 </assign>
-<msg timestamp="20151113 13:37:09.909" level="INFO">1 out of 5 lines matched</msg>
-<msg timestamp="20151113 13:37:09.909" level="INFO">${ipmiline} = "ipmi","52t0T1sV6SR7aLMv8lk6HcE3idKNUO4mzZW4QhCD5q0n9pIGoe3y2jXPwfu7x8BF","admin",,,,</msg>
-<status status="PASS" endtime="20151113 13:37:09.909" starttime="20151113 13:37:09.908"></status>
+<msg timestamp="20151130 13:30:54.669" level="INFO">1 out of 5 lines matched</msg>
+<msg timestamp="20151130 13:30:54.671" level="INFO">${ipmiline} = "ipmi","wNAXKdki8u1Ucxr0onfYCVT56l9S3sgZMH72zG8qvyREapePbOW341m90hLjtQF5","admin",,,,</msg>
+<status status="PASS" endtime="20151130 13:30:54.671" starttime="20151130 13:30:54.667"></status>
 </kw>
 <kw name="Split String" library="String">
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
@@ -1313,8 +1385,8 @@
 <assign>
 <var>@{BMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:37:09.910" level="INFO">@{BMCdefault} = [ "ipmi" | "52t0T1sV6SR7aLMv8lk6HcE3idKNUO4mzZW4QhCD5q0n9pIGoe3y2jXPwfu7x8BF" | "admin" |  |  |  |  ]</msg>
-<status status="PASS" endtime="20151113 13:37:09.911" starttime="20151113 13:37:09.909"></status>
+<msg timestamp="20151130 13:30:54.675" level="INFO">@{BMCdefault} = [ "ipmi" | "wNAXKdki8u1Ucxr0onfYCVT56l9S3sgZMH72zG8qvyREapePbOW341m90hLjtQF5" | "admin" |  |  |  |  ]</msg>
+<status status="PASS" endtime="20151130 13:30:54.676" starttime="20151130 13:30:54.672"></status>
 </kw>
 <kw name="Split String" library="String">
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
@@ -1325,8 +1397,8 @@
 <assign>
 <var>@{usernameBMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:37:09.912" level="INFO">@{usernameBMCdefault} = [  | 52t0T1sV6SR7aLMv8lk6HcE3idKNUO4mzZW4QhCD5q0n9pIGoe3y2jXPwfu7x8BF |  ]</msg>
-<status status="PASS" endtime="20151113 13:37:09.912" starttime="20151113 13:37:09.911"></status>
+<msg timestamp="20151130 13:30:54.680" level="INFO">@{usernameBMCdefault} = [  | wNAXKdki8u1Ucxr0onfYCVT56l9S3sgZMH72zG8qvyREapePbOW341m90hLjtQF5 |  ]</msg>
+<status status="PASS" endtime="20151130 13:30:54.680" starttime="20151130 13:30:54.677"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -1336,8 +1408,8 @@
 <assign>
 <var>${usernameBMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:37:09.913" level="INFO">${usernameBMCdefault} = 52t0T1sV6SR7aLMv8lk6HcE3idKNUO4mzZW4QhCD5q0n9pIGoe3y2jXPwfu7x8BF</msg>
-<status status="PASS" endtime="20151113 13:37:09.913" starttime="20151113 13:37:09.912"></status>
+<msg timestamp="20151130 13:30:54.683" level="INFO">${usernameBMCdefault} = wNAXKdki8u1Ucxr0onfYCVT56l9S3sgZMH72zG8qvyREapePbOW341m90hLjtQF5</msg>
+<status status="PASS" endtime="20151130 13:30:54.684" starttime="20151130 13:30:54.681"></status>
 </kw>
 <kw name="Split String" library="String">
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
@@ -1348,8 +1420,8 @@
 <assign>
 <var>@{passwordBMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:37:09.914" level="INFO">@{passwordBMCdefault} = [  | admin |  ]</msg>
-<status status="PASS" endtime="20151113 13:37:09.914" starttime="20151113 13:37:09.913"></status>
+<msg timestamp="20151130 13:30:54.686" level="INFO">@{passwordBMCdefault} = [  | admin |  ]</msg>
+<status status="PASS" endtime="20151130 13:30:54.686" starttime="20151130 13:30:54.684"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -1359,12 +1431,12 @@
 <assign>
 <var>${passwordBMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:37:09.915" level="INFO">${passwordBMCdefault} = admin</msg>
-<status status="PASS" endtime="20151113 13:37:09.915" starttime="20151113 13:37:09.915"></status>
+<msg timestamp="20151130 13:30:54.688" level="INFO">${passwordBMCdefault} = admin</msg>
+<status status="PASS" endtime="20151130 13:30:54.688" starttime="20151130 13:30:54.687"></status>
 </kw>
-<msg timestamp="20151113 13:37:09.916" level="INFO">${username-BMC-default} = 52t0T1sV6SR7aLMv8lk6HcE3idKNUO4mzZW4QhCD5q0n9pIGoe3y2jXPwfu7x8BF</msg>
-<msg timestamp="20151113 13:37:09.916" level="INFO">${password-BMC-default} = admin</msg>
-<status status="PASS" endtime="20151113 13:37:09.916" starttime="20151113 13:37:07.498"></status>
+<msg timestamp="20151130 13:30:54.689" level="INFO">${username-BMC-default} = wNAXKdki8u1Ucxr0onfYCVT56l9S3sgZMH72zG8qvyREapePbOW341m90hLjtQF5</msg>
+<msg timestamp="20151130 13:30:54.690" level="INFO">${password-BMC-default} = admin</msg>
+<status status="PASS" endtime="20151130 13:30:54.690" starttime="20151130 13:30:52.234"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -1372,7 +1444,10 @@
 <arg>${username-BMC-default}</arg>
 <arg>${username-BMC}</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:09.919" starttime="20151113 13:37:09.918"></status>
+<msg timestamp="20151130 13:30:54.692" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20151130 13:30:54.692" starttime="20151130 13:30:54.691"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -1380,21 +1455,21 @@
 <arg>${password-BMC-default}</arg>
 <arg>${password-BMC}</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:09.921" starttime="20151113 13:37:09.920"></status>
+<status status="PASS" endtime="20151130 13:30:54.695" starttime="20151130 13:30:54.693"></status>
 </kw>
 <kw name="关闭浏览器" library="MyKeyword">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20151113 13:37:11.180" starttime="20151113 13:37:09.922"></status>
+<status status="PASS" endtime="20151130 13:30:54.730" starttime="20151130 13:30:54.697"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:37:11.181" starttime="20151113 13:37:09.922"></status>
+<status status="PASS" endtime="20151130 13:30:54.731" starttime="20151130 13:30:54.696"></status>
 </kw>
 <doc>输入64位混合数字和字母的用户名</doc>
 <tags>
 <tag>DefaultConfiguration</tag>
 <tag>done</tag>
 </tags>
-<status status="PASS" endtime="20151113 13:37:11.182" critical="yes" starttime="20151113 13:36:56.001"></status>
+<status status="PASS" endtime="20151130 13:30:54.734" critical="yes" starttime="20151130 13:30:44.559"></status>
 </test>
 <test id="s1-s1-t8" name="Default_008">
 <kw name="登录web页面" library="MyFlow">
@@ -1410,12 +1485,12 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:11.195" level="INFO">Opening browser 'chrome' to base url 'http://172.30.10.130'</msg>
-<status status="PASS" endtime="20151113 13:37:16.118" starttime="20151113 13:37:11.194"></status>
+<msg timestamp="20151130 13:30:54.743" level="INFO">Opening browser 'firefox' to base url 'http://172.30.10.130'</msg>
+<status status="PASS" endtime="20151130 13:30:57.831" starttime="20151130 13:30:54.741"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20151113 13:37:16.308" starttime="20151113 13:37:16.119"></status>
+<status status="PASS" endtime="20151130 13:30:57.870" starttime="20151130 13:30:57.831"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1423,8 +1498,8 @@
 <arg>id=id_username</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:16.310" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
-<status status="PASS" endtime="20151113 13:37:16.393" starttime="20151113 13:37:16.309"></status>
+<msg timestamp="20151130 13:30:57.871" level="INFO">Typing text 'omcadmin' into text field 'id=id_username'</msg>
+<status status="PASS" endtime="20151130 13:30:58.027" starttime="20151130 13:30:57.870"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into text field identified by `locator`.</doc>
@@ -1432,25 +1507,25 @@
 <arg>id=id_password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:16.394" level="INFO">Typing password into text field 'id=id_password'</msg>
-<status status="PASS" endtime="20151113 13:37:16.530" starttime="20151113 13:37:16.393"></status>
+<msg timestamp="20151130 13:30:58.028" level="INFO">Typing password into text field 'id=id_password'</msg>
+<status status="PASS" endtime="20151130 13:30:58.130" starttime="20151130 13:30:58.027"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>css=[type=submit]</arg>
 </arguments>
-<msg timestamp="20151113 13:37:16.532" level="INFO">Clicking button 'css=[type=submit]'.</msg>
-<status status="PASS" endtime="20151113 13:37:16.627" starttime="20151113 13:37:16.531"></status>
+<msg timestamp="20151130 13:30:58.131" level="INFO">Clicking button 'css=[type=submit]'.</msg>
+<status status="PASS" endtime="20151130 13:30:59.840" starttime="20151130 13:30:58.130"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>id=user_info</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:18.237" starttime="20151113 13:37:16.627"></status>
+<status status="PASS" endtime="20151130 13:30:59.854" starttime="20151130 13:30:59.842"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:37:18.238" starttime="20151113 13:37:11.192"></status>
+<status status="PASS" endtime="20151130 13:30:59.854" starttime="20151130 13:30:54.740"></status>
 </kw>
 <kw name="点击默认设置" library="MyFlow">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
@@ -1458,39 +1533,39 @@
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:18.268" starttime="20151113 13:37:18.239"></status>
+<status status="PASS" endtime="20151130 13:30:59.889" starttime="20151130 13:30:59.856"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//i[@class="icon-setting"]</arg>
 </arguments>
-<msg timestamp="20151113 13:37:18.269" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
-<status status="PASS" endtime="20151113 13:37:18.315" starttime="20151113 13:37:18.269"></status>
+<msg timestamp="20151130 13:30:59.890" level="INFO">Clicking element 'Xpath=//i[@class="icon-setting"]'.</msg>
+<status status="PASS" endtime="20151130 13:30:59.963" starttime="20151130 13:30:59.889"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:18.588" starttime="20151113 13:37:18.316"></status>
+<status status="PASS" endtime="20151130 13:31:00.207" starttime="20151130 13:30:59.964"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//a[@href="/hardware/globalattributes/"]</arg>
 </arguments>
-<msg timestamp="20151113 13:37:18.590" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
-<status status="PASS" endtime="20151113 13:37:18.665" starttime="20151113 13:37:18.589"></status>
+<msg timestamp="20151130 13:31:00.208" level="INFO">Clicking element 'Xpath=//a[@href="/hardware/globalattributes/"]'.</msg>
+<status status="PASS" endtime="20151130 13:31:00.771" starttime="20151130 13:31:00.208"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:19.312" starttime="20151113 13:37:18.665"></status>
+<status status="PASS" endtime="20151130 13:31:00.798" starttime="20151130 13:31:00.772"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:37:19.313" starttime="20151113 13:37:18.238"></status>
+<status status="PASS" endtime="20151130 13:31:00.799" starttime="20151130 13:30:59.855"></status>
 </kw>
 <kw name="创建随机序列">
 <doc>输入一个数字或字母字符串string，和一个不大于字符串长度的自然数n，随机返回一个长度为n的字符串</doc>
@@ -1510,8 +1585,8 @@
 <assign>
 <var>${sample}</var>
 </assign>
-<msg timestamp="20151113 13:37:19.318" level="INFO">${sample} = ['Y', 'B', 'i', 'q', 'M', '1', 'C', 'W', 'F', 'J', '4', 'a', 'r', 'd', '2', '5', 'c', 'S', 'm', 'V', 'j', 'E', '9', 'w', 'K', 'g', '7', '7', 'T', 'N', '5', 'f', 'I', 'L', 'D', '0', '9', 'P', 'h', 'v',...</msg>
-<status status="PASS" endtime="20151113 13:37:19.318" starttime="20151113 13:37:19.316"></status>
+<msg timestamp="20151130 13:31:00.803" level="INFO">${sample} = ['N', '3', 'F', 'z', 'G', '8', 't', 'b', '5', '8', '5', 'm', 'l', 'r', '7', 'B', 'O', '6', 'j', 'U', 'J', '0', 'd', 'e', 'M', '4', '9', '0', 'p', 'E', 's', 'K', 'C', 'R', '2', 'u', 'w', 'h', 'Q', '4',...</msg>
+<status status="PASS" endtime="20151130 13:31:00.804" starttime="20151130 13:31:00.800"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -1521,19 +1596,19 @@
 <assign>
 <var>${sample}</var>
 </assign>
-<msg timestamp="20151113 13:37:19.320" level="INFO">${sample} = YBiqM1CWFJ4ard25cSmVjE9wKg77TN5fILD09PhvA6sn8XptU80kOubHZ6e3z34l</msg>
-<status status="PASS" endtime="20151113 13:37:19.321" starttime="20151113 13:37:19.318"></status>
+<msg timestamp="20151130 13:31:00.820" level="INFO">${sample} = N3FzG8tb585mlr7BO6jUJ0deM490pEsKCR2uwhQ4ILo611iqZ9cyvVxgnkXYaWfS</msg>
+<status status="PASS" endtime="20151130 13:31:00.820" starttime="20151130 13:31:00.804"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${sample}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:19.321" level="INFO">YBiqM1CWFJ4ard25cSmVjE9wKg77TN5fILD09PhvA6sn8XptU80kOubHZ6e3z34l</msg>
-<status status="PASS" endtime="20151113 13:37:19.322" starttime="20151113 13:37:19.321"></status>
+<msg timestamp="20151130 13:31:00.838" level="INFO">N3FzG8tb585mlr7BO6jUJ0deM490pEsKCR2uwhQ4ILo611iqZ9cyvVxgnkXYaWfS</msg>
+<status status="PASS" endtime="20151130 13:31:00.843" starttime="20151130 13:31:00.820"></status>
 </kw>
-<msg timestamp="20151113 13:37:19.322" level="INFO">${sample} = YBiqM1CWFJ4ard25cSmVjE9wKg77TN5fILD09PhvA6sn8XptU80kOubHZ6e3z34l</msg>
-<status status="PASS" endtime="20151113 13:37:19.322" starttime="20151113 13:37:19.315"></status>
+<msg timestamp="20151130 13:31:00.843" level="INFO">${sample} = N3FzG8tb585mlr7BO6jUJ0deM490pEsKCR2uwhQ4ILo611iqZ9cyvVxgnkXYaWfS</msg>
+<status status="PASS" endtime="20151130 13:31:00.844" starttime="20151130 13:31:00.799"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -1543,8 +1618,8 @@
 <assign>
 <var>${password-BMC}</var>
 </assign>
-<msg timestamp="20151113 13:37:19.324" level="INFO">${password-BMC} = YBiqM1CWFJ4ard25cSmVjE9wKg77TN5fILD09PhvA6sn8XptU80kOubHZ6e3z34l</msg>
-<status status="PASS" endtime="20151113 13:37:19.325" starttime="20151113 13:37:19.324"></status>
+<msg timestamp="20151130 13:31:00.848" level="INFO">${password-BMC} = N3FzG8tb585mlr7BO6jUJ0deM490pEsKCR2uwhQ4ILo611iqZ9cyvVxgnkXYaWfS</msg>
+<status status="PASS" endtime="20151130 13:31:00.848" starttime="20151130 13:31:00.844"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1552,8 +1627,8 @@
 <arg>Xpath=//input[@id="id_default_username"]</arg>
 <arg>${username-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:19.326" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_username"]'</msg>
-<status status="PASS" endtime="20151113 13:37:19.416" starttime="20151113 13:37:19.326"></status>
+<msg timestamp="20151130 13:31:00.859" level="INFO">Typing text 'admin' into text field 'Xpath=//input[@id="id_default_username"]'</msg>
+<status status="PASS" endtime="20151130 13:31:00.961" starttime="20151130 13:31:00.858"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1561,8 +1636,8 @@
 <arg>Xpath=//input[@id="id_default_pwd"]</arg>
 <arg>${password-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:19.423" level="INFO">Typing text 'YBiqM1CWFJ4ard25cSmVjE9wKg77TN5fILD09PhvA6sn8XptU80kOubHZ6e3z34l' into text field 'Xpath=//input[@id="id_default_pwd"]'</msg>
-<status status="PASS" endtime="20151113 13:37:19.641" starttime="20151113 13:37:19.421"></status>
+<msg timestamp="20151130 13:31:00.962" level="INFO">Typing text 'N3FzG8tb585mlr7BO6jUJ0deM490pEsKCR2uwhQ4ILo611iqZ9cyvVxgnkXYaWfS' into text field 'Xpath=//input[@id="id_default_pwd"]'</msg>
+<status status="PASS" endtime="20151130 13:31:01.295" starttime="20151130 13:31:00.961"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1570,16 +1645,16 @@
 <arg>Xpath=//input[@id="id_confirm_pwd"]</arg>
 <arg>${password-BMC}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:19.643" level="INFO">Typing text 'YBiqM1CWFJ4ard25cSmVjE9wKg77TN5fILD09PhvA6sn8XptU80kOubHZ6e3z34l' into text field 'Xpath=//input[@id="id_confirm_pwd"]'</msg>
-<status status="PASS" endtime="20151113 13:37:20.213" starttime="20151113 13:37:19.641"></status>
+<msg timestamp="20151130 13:31:01.296" level="INFO">Typing text 'N3FzG8tb585mlr7BO6jUJ0deM490pEsKCR2uwhQ4ILo611iqZ9cyvVxgnkXYaWfS' into text field 'Xpath=//input[@id="id_confirm_pwd"]'</msg>
+<status status="PASS" endtime="20151130 13:31:01.608" starttime="20151130 13:31:01.295"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>Xpath=//button[@type="submit"]</arg>
 </arguments>
-<msg timestamp="20151113 13:37:20.215" level="INFO">Clicking element 'Xpath=//button[@type="submit"]'.</msg>
-<status status="PASS" endtime="20151113 13:37:20.623" starttime="20151113 13:37:20.214"></status>
+<msg timestamp="20151130 13:31:01.610" level="INFO">Clicking element 'Xpath=//button[@type="submit"]'.</msg>
+<status status="PASS" endtime="20151130 13:31:03.179" starttime="20151130 13:31:01.610"></status>
 </kw>
 <kw name="提示成功" library="MyKeyword">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -1588,9 +1663,9 @@
 <arg>xPath=/html/body/div[1]/div[2]/div[1]/div[@class='alert alert-block alert-success fade in']</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:22.229" starttime="20151113 13:37:20.625"></status>
+<status status="PASS" endtime="20151130 13:31:03.192" starttime="20151130 13:31:03.180"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:37:22.230" starttime="20151113 13:37:20.624"></status>
+<status status="PASS" endtime="20151130 13:31:03.192" starttime="20151130 13:31:03.179"></status>
 </kw>
 <kw name="获取实际的BMC用户名和密码">
 <assign>
@@ -1602,7 +1677,7 @@
 <arguments>
 <arg>${ip-mn}</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:22.233" starttime="20151113 13:37:22.232"></status>
+<status status="PASS" endtime="20151130 13:31:03.194" starttime="20151130 13:31:03.194"></status>
 </kw>
 <kw name="Login" library="SSHLibrary">
 <doc>Logs into the SSH server with the given `username` and `password`.</doc>
@@ -1610,10 +1685,10 @@
 <arg>${username-mn}</arg>
 <arg>${password-mn}</arg>
 </arguments>
-<msg timestamp="20151113 13:37:22.234" level="INFO">Logging into '172.30.10.130:22' as 'root'.</msg>
-<msg timestamp="20151113 13:37:23.417" level="INFO">Read output: Last login: Fri Nov 13 13:37:01 2015 from 172.24.18.173
+<msg timestamp="20151130 13:31:03.196" level="INFO">Logging into '172.30.10.130:22' as 'root'.</msg>
+<msg timestamp="20151130 13:31:04.358" level="INFO">Read output: Last login: Mon Nov 30 13:30:50 2015 from 172.24.18.171
 [root@localhost ~]#</msg>
-<status status="PASS" endtime="20151113 13:37:23.418" starttime="20151113 13:37:22.233"></status>
+<status status="PASS" endtime="20151130 13:31:04.359" starttime="20151130 13:31:03.195"></status>
 </kw>
 <kw name="Execute Command" library="SSHLibrary">
 <doc>Executes `command` on the remote machine and returns its outputs.</doc>
@@ -1623,21 +1698,21 @@
 <assign>
 <var>${stdout}</var>
 </assign>
-<msg timestamp="20151113 13:37:23.420" level="INFO">Executing command 'tabdump passwd'.</msg>
-<msg timestamp="20151113 13:37:24.665" level="INFO">Command exited with return code 0.</msg>
-<msg timestamp="20151113 13:37:24.673" level="INFO">${stdout} = #key,username,password,cryptmethod,authdomain,comments,disable
+<msg timestamp="20151130 13:31:04.364" level="INFO">Executing command 'tabdump passwd'.</msg>
+<msg timestamp="20151130 13:31:05.608" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20151130 13:31:05.609" level="INFO">${stdout} = #key,username,password,cryptmethod,authdomain,comments,disable
 "xcat","root","teamsun",,,,
 "system","root","teamsun",,,,
 "omapi","xcat_key","V1dyS1lYQWdUQmxIaENKTUw0Z25McTBhTTZobm96R3I=",,,,
 "ipmi","a...</msg>
-<status status="PASS" endtime="20151113 13:37:24.673" starttime="20151113 13:37:23.419"></status>
+<status status="PASS" endtime="20151130 13:31:05.609" starttime="20151130 13:31:04.362"></status>
 </kw>
 <kw name="Import Library" library="BuiltIn">
 <doc>Imports a library with the given name and optional arguments.</doc>
 <arguments>
 <arg>String</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:24.678" starttime="20151113 13:37:24.674"></status>
+<status status="PASS" endtime="20151130 13:31:05.612" starttime="20151130 13:31:05.609"></status>
 </kw>
 <kw name="Get Lines Containing String" library="String">
 <doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
@@ -1648,9 +1723,9 @@
 <assign>
 <var>${ipmiline}</var>
 </assign>
-<msg timestamp="20151113 13:37:24.682" level="INFO">1 out of 5 lines matched</msg>
-<msg timestamp="20151113 13:37:24.683" level="INFO">${ipmiline} = "ipmi","admin","YBiqM1CWFJ4ard25cSmVjE9wKg77TN5fILD09PhvA6sn8XptU80kOubHZ6e3z34l",,,,</msg>
-<status status="PASS" endtime="20151113 13:37:24.683" starttime="20151113 13:37:24.680"></status>
+<msg timestamp="20151130 13:31:05.614" level="INFO">1 out of 5 lines matched</msg>
+<msg timestamp="20151130 13:31:05.614" level="INFO">${ipmiline} = "ipmi","admin","N3FzG8tb585mlr7BO6jUJ0deM490pEsKCR2uwhQ4ILo611iqZ9cyvVxgnkXYaWfS",,,,</msg>
+<status status="PASS" endtime="20151130 13:31:05.614" starttime="20151130 13:31:05.613"></status>
 </kw>
 <kw name="Split String" library="String">
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
@@ -1661,8 +1736,8 @@
 <assign>
 <var>@{BMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:37:24.686" level="INFO">@{BMCdefault} = [ "ipmi" | "admin" | "YBiqM1CWFJ4ard25cSmVjE9wKg77TN5fILD09PhvA6sn8XptU80kOubHZ6e3z34l" |  |  |  |  ]</msg>
-<status status="PASS" endtime="20151113 13:37:24.686" starttime="20151113 13:37:24.684"></status>
+<msg timestamp="20151130 13:31:05.616" level="INFO">@{BMCdefault} = [ "ipmi" | "admin" | "N3FzG8tb585mlr7BO6jUJ0deM490pEsKCR2uwhQ4ILo611iqZ9cyvVxgnkXYaWfS" |  |  |  |  ]</msg>
+<status status="PASS" endtime="20151130 13:31:05.616" starttime="20151130 13:31:05.615"></status>
 </kw>
 <kw name="Split String" library="String">
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
@@ -1673,8 +1748,8 @@
 <assign>
 <var>@{usernameBMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:37:24.687" level="INFO">@{usernameBMCdefault} = [  | admin |  ]</msg>
-<status status="PASS" endtime="20151113 13:37:24.688" starttime="20151113 13:37:24.686"></status>
+<msg timestamp="20151130 13:31:05.617" level="INFO">@{usernameBMCdefault} = [  | admin |  ]</msg>
+<status status="PASS" endtime="20151130 13:31:05.617" starttime="20151130 13:31:05.616"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -1684,8 +1759,8 @@
 <assign>
 <var>${usernameBMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:37:24.689" level="INFO">${usernameBMCdefault} = admin</msg>
-<status status="PASS" endtime="20151113 13:37:24.689" starttime="20151113 13:37:24.688"></status>
+<msg timestamp="20151130 13:31:05.618" level="INFO">${usernameBMCdefault} = admin</msg>
+<status status="PASS" endtime="20151130 13:31:05.619" starttime="20151130 13:31:05.618"></status>
 </kw>
 <kw name="Split String" library="String">
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
@@ -1696,8 +1771,8 @@
 <assign>
 <var>@{passwordBMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:37:24.691" level="INFO">@{passwordBMCdefault} = [  | YBiqM1CWFJ4ard25cSmVjE9wKg77TN5fILD09PhvA6sn8XptU80kOubHZ6e3z34l |  ]</msg>
-<status status="PASS" endtime="20151113 13:37:24.691" starttime="20151113 13:37:24.690"></status>
+<msg timestamp="20151130 13:31:05.620" level="INFO">@{passwordBMCdefault} = [  | N3FzG8tb585mlr7BO6jUJ0deM490pEsKCR2uwhQ4ILo611iqZ9cyvVxgnkXYaWfS |  ]</msg>
+<status status="PASS" endtime="20151130 13:31:05.620" starttime="20151130 13:31:05.619"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -1707,12 +1782,12 @@
 <assign>
 <var>${passwordBMCdefault}</var>
 </assign>
-<msg timestamp="20151113 13:37:24.692" level="INFO">${passwordBMCdefault} = YBiqM1CWFJ4ard25cSmVjE9wKg77TN5fILD09PhvA6sn8XptU80kOubHZ6e3z34l</msg>
-<status status="PASS" endtime="20151113 13:37:24.692" starttime="20151113 13:37:24.691"></status>
+<msg timestamp="20151130 13:31:05.622" level="INFO">${passwordBMCdefault} = N3FzG8tb585mlr7BO6jUJ0deM490pEsKCR2uwhQ4ILo611iqZ9cyvVxgnkXYaWfS</msg>
+<status status="PASS" endtime="20151130 13:31:05.622" starttime="20151130 13:31:05.621"></status>
 </kw>
-<msg timestamp="20151113 13:37:24.693" level="INFO">${username-BMC-default} = admin</msg>
-<msg timestamp="20151113 13:37:24.694" level="INFO">${password-BMC-default} = YBiqM1CWFJ4ard25cSmVjE9wKg77TN5fILD09PhvA6sn8XptU80kOubHZ6e3z34l</msg>
-<status status="PASS" endtime="20151113 13:37:24.694" starttime="20151113 13:37:22.232"></status>
+<msg timestamp="20151130 13:31:05.622" level="INFO">${username-BMC-default} = admin</msg>
+<msg timestamp="20151130 13:31:05.623" level="INFO">${password-BMC-default} = N3FzG8tb585mlr7BO6jUJ0deM490pEsKCR2uwhQ4ILo611iqZ9cyvVxgnkXYaWfS</msg>
+<status status="PASS" endtime="20151130 13:31:05.623" starttime="20151130 13:31:03.193"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -1720,7 +1795,7 @@
 <arg>${username-BMC-default}</arg>
 <arg>${username-BMC}</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:24.696" starttime="20151113 13:37:24.695"></status>
+<status status="PASS" endtime="20151130 13:31:05.624" starttime="20151130 13:31:05.623"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -1728,38 +1803,41 @@
 <arg>${password-BMC-default}</arg>
 <arg>${password-BMC}</arg>
 </arguments>
-<status status="PASS" endtime="20151113 13:37:24.698" starttime="20151113 13:37:24.697"></status>
+<msg timestamp="20151130 13:31:05.626" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20151130 13:31:05.626" starttime="20151130 13:31:05.625"></status>
 </kw>
 <kw name="关闭浏览器" library="MyKeyword">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20151113 13:37:25.957" starttime="20151113 13:37:24.700"></status>
+<status status="PASS" endtime="20151130 13:31:05.686" starttime="20151130 13:31:05.627"></status>
 </kw>
-<status status="PASS" endtime="20151113 13:37:25.959" starttime="20151113 13:37:24.699"></status>
+<status status="PASS" endtime="20151130 13:31:05.687" starttime="20151130 13:31:05.626"></status>
 </kw>
 <doc>输入64位混合数字和字母的密码</doc>
 <tags>
 <tag>DefaultConfiguration</tag>
 <tag>done</tag>
 </tags>
-<status status="PASS" endtime="20151113 13:37:25.960" critical="yes" starttime="20151113 13:37:11.190"></status>
+<status status="PASS" endtime="20151130 13:31:05.687" critical="yes" starttime="20151130 13:30:54.734"></status>
 </test>
-<status status="FAIL" endtime="20151113 13:37:25.967" starttime="20151113 13:34:40.945"></status>
+<status status="PASS" endtime="20151130 13:31:05.726" starttime="20151130 13:29:57.378"></status>
 </suite>
-<status status="FAIL" endtime="20151113 13:37:25.983" starttime="20151113 13:34:40.812"></status>
+<status status="PASS" endtime="20151130 13:31:05.729" starttime="20151130 13:29:57.318"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="2" pass="6">Critical Tests</stat>
-<stat fail="2" pass="6">All Tests</stat>
+<stat fail="0" pass="8">Critical Tests</stat>
+<stat fail="0" pass="8">All Tests</stat>
 </total>
 <tag>
-<stat fail="2" pass="6">DefaultConfiguration</stat>
-<stat fail="2" pass="6">done</stat>
+<stat fail="0" pass="8">DefaultConfiguration</stat>
+<stat fail="0" pass="8">done</stat>
 </tag>
 <suite>
-<stat fail="2" id="s1" name="OMCTest" pass="6">OMCTest</stat>
-<stat fail="2" id="s1-s1" name="DefaultConfiguration" pass="6">OMCTest.DefaultConfiguration</stat>
+<stat fail="0" id="s1" name="OMCTest" pass="8">OMCTest</stat>
+<stat fail="0" id="s1-s1" name="DefaultConfiguration" pass="8">OMCTest.DefaultConfiguration</stat>
 </suite>
 </statistics>
 <errors>

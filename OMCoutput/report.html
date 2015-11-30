@@ -5,7 +5,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 2.9b2 (Python 2.7 on win32)" name="Generator">
+<meta content="Robot Framework 2.9.2 (Python 2.7.6 on linux2)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAJEBoACtnfgA5cYYAERsiAEx2lAAbKkQAcazBACZCVwAcM1cAK0ucAAMDBQAnQncASG+FABkoVQAyWmgA6f8SgvH/Ij99+GLyIinyJfn/Yi//KSLzUy9iZogpIld3/4JVVTkid7vyUjNVNVJEAGOZ6Z7pXwAABpmZkRiLAAAGiJZpmGAAAEEt3SXdxAAATC7o/u3EAAC8MRZpjasAAAY1VVVTYAAABKqqqqpAAAAADKqq4AAAAAAAv4sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMADAADgAwAA4AcAAOAHAADgBwAAwAcAAOAHAADgDwAA8A8AAPg/AAD+fwAA">
 <style media="all" type="text/css">
 /* Generic and misc styles */
@@ -651,7 +651,7 @@ window.model = (function () {
             for (var i in suites)
                 tests = tests.concat(suites[i].searchTestsInSuite(pattern, matcher));
             return tests;
-        }
+        };
         suite.searchTestsByTag = function (tag) {
             return suite.searchTests(function (test) {
                 if (tag.combined)
@@ -1159,15 +1159,18 @@ window.testdata = function () {
         kw.populateMessages(Populator(element[10], strings, message));
         return kw;
     }
-    function lazyPopulateKeywordsFromFile(parent, keywordsOrIndex, strings) {
+    function lazyPopulateKeywordsFromFile(parent, modelOrIndex, strings) {
+        var model, index, populator;
+        var creator = childCreator(parent, createKeyword);
         if (parent.isChildrenLoaded) {
-            var keywords = keywordsOrIndex;
-            parent.populateKeywords(Populator(keywords, strings, childCreator(parent, createKeyword)));
+            model = modelOrIndex;
+            populator = Populator(model, strings, creator);
         } else {
-            var index = keywordsOrIndex;
+            index = modelOrIndex;
             parent.childFileName = window.settings['splitLogBase'] + '-' + index + '.js';
-            parent.populateKeywords(SplitLogPopulator(keywordsOrIndex, childCreator(parent, createKeyword)));
+            populator = SplitLogPopulator(index, creator);
         }
+        parent.populateKeywords(populator);
     }
     function tags(taglist, strings) {
         return util.map(taglist, strings.get);
@@ -1552,25 +1555,25 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[0,0,165171],[[4,5,6,0,[],[0,133,165022],[],[[7,0,1,8,[4,9],[0,2719,48986,10],[]],[11,0,1,12,[4,9],[0,51707,30965,13],[]],[14,0,1,15,[4,9],[1,82674,13450],[]],[16,0,1,17,[4,9],[1,96126,11728],[]],[18,0,1,19,[4,9],[1,107856,11857],[]],[20,0,1,21,[4,9],[1,119715,15467],[]],[22,0,1,23,[4,9],[1,135189,15181],[]],[24,0,1,25,[4,9],[1,150378,14770],[]]],[],[8,6,8,6]]],[],[],[8,6,8,6]];
+window.output["suite"] = [1,2,3,0,[],[1,0,68411],[[4,5,6,0,[],[1,60,68348],[],[[7,0,1,8,[4,9],[1,842,9163],[]],[10,0,1,11,[4,9],[1,10010,8102],[]],[12,0,1,13,[4,9],[1,18117,5935],[]],[14,0,1,15,[4,9],[1,24053,6175],[]],[16,0,1,17,[4,9],[1,30232,6479],[]],[18,0,1,19,[4,9],[1,36713,10528],[]],[20,0,1,21,[4,9],[1,47241,10175],[]],[22,0,1,23,[4,9],[1,57416,10953],[]]],[],[8,8,8,8]]],[],[],[8,8,8,8]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*OMCTest","*D:\\OMCTest","*../OMCTest","*DefaultConfiguration","*D:\\OMCTest\\DefaultConfiguration.txt","*../OMCTest/DefaultConfiguration.txt","*Default_001","*<p>1、检查默认配置页面元素，应该含有“用户名”、“密码”、确认密码三个输入框和一个名称为“保存”的按钮； 2、Default Configuration页面，不输入信息，点击“保存”按钮；\x3c/p>","*done","*Element 'Xpath=//input[@id=\"id_default_username\"]' did not appear in 5 seconds","*Default_002","*<p>Default Configuration页面，不输入username\x3c/p>","*Element 'xPath=/html/body/div[1]/div[2]/div[1]/div[@class='alert alert-block alert-success fade in']' did not appear in 10 seconds","*Default_003","*<p>Default Configuration页面，不输入password\x3c/p>","*Default_004","*<p>Default Configuration页面，不输入confirm password\x3c/p>","*Default_005","*<p>Default Configuration页面，密码和confirm password不一致\x3c/p>","*Default_006","*<p>Default Configuration页面，密码和confirm passwor一致\x3c/p>","*Default_007","*<p>输入64位混合数字和字母的用户名\x3c/p>","*Default_008","*<p>输入64位混合数字和字母的密码\x3c/p>"]);
+window.output["strings"] = window.output["strings"].concat(["*","*OMCTest","*/home/omcadmin/autoOMC/OMCTest","*../OMCTest","*DefaultConfiguration","*/home/omcadmin/autoOMC/OMCTest/DefaultConfiguration.txt","*../OMCTest/DefaultConfiguration.txt","*Default_001","*<p>1、检查默认配置页面元素，应该含有“用户名”、“密码”、确认密码三个输入框和一个名称为“保存”的按钮； 2、Default Configuration页面，不输入信息，点击“保存”按钮；\x3c/p>","*done","*Default_002","*<p>Default Configuration页面，不输入username\x3c/p>","*Default_003","*<p>Default Configuration页面，不输入password\x3c/p>","*Default_004","*<p>Default Configuration页面，不输入confirm password\x3c/p>","*Default_005","*<p>Default Configuration页面，密码和confirm password不一致\x3c/p>","*Default_006","*<p>Default Configuration页面，密码和confirm passwor一致\x3c/p>","*Default_007","*<p>输入64位混合数字和字母的用户名\x3c/p>","*Default_008","*<p>输入64位混合数字和字母的密码\x3c/p>"]);
 </script>
 <script type="text/javascript">
-window.output["generatedTimestamp"] = "20151113 13:37:26 GMT +09:00";
+window.output["generatedTimestamp"] = "20151130 13:31:05 GMT +08:00";
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:02:42","fail":2,"label":"Critical Tests","pass":6},{"elapsed":"00:02:42","fail":2,"label":"All Tests","pass":6}],[{"elapsed":"00:02:42","fail":2,"label":"DefaultConfiguration","pass":6},{"elapsed":"00:02:42","fail":2,"label":"done","pass":6}],[{"elapsed":"00:02:45","fail":2,"id":"s1","label":"OMCTest","name":"OMCTest","pass":6},{"elapsed":"00:02:45","fail":2,"id":"s1-s1","label":"OMCTest.DefaultConfiguration","name":"DefaultConfiguration","pass":6}]];
+window.output["stats"] = [[{"elapsed":"00:01:08","fail":0,"label":"Critical Tests","pass":8},{"elapsed":"00:01:08","fail":0,"label":"All Tests","pass":8}],[{"elapsed":"00:01:08","fail":0,"label":"DefaultConfiguration","pass":8},{"elapsed":"00:01:08","fail":0,"label":"done","pass":8}],[{"elapsed":"00:01:08","fail":0,"id":"s1","label":"OMCTest","name":"OMCTest","pass":8},{"elapsed":"00:01:08","fail":0,"id":"s1-s1","label":"OMCTest.DefaultConfiguration","name":"DefaultConfiguration","pass":8}]];
 </script>
 <script type="text/javascript">
-window.output["generatedMillis"] = 165188;
+window.output["generatedMillis"] = 67682;
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1447392880812;
+window.output["baseMillis"] = 1448861397318;
 </script>
 <script type="text/javascript">
 window.settings = {"background":{"fail":"#f66","nonCriticalFail":"#9e9","pass":"#9e9"},"logURL":"log.html","title":""};
